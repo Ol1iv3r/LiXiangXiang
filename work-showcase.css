@@ -269,7 +269,7 @@ html:has(.home-contact-dialog[open]){overflow:hidden}
 
 /* Only the small visitor label opens the map, not the surrounding panel. */
 .contact-visitors{cursor:default}
-.visitor-map-trigger{display:inline-block;padding:3px 5px;color:#a7b8ab;font:400 10px/1.4 Inter,Arial,sans-serif;cursor:zoom-in}
+.contact-section .visitor-map-trigger{position:static;inset:auto;transform:none;display:inline-block;width:auto;height:auto;min-width:0;padding:3px 5px;border:0;border-radius:0;background:none;color:#a7b8ab;font:400 10px/1.4 Inter,Arial,sans-serif;white-space:nowrap;cursor:zoom-in}
 .contact-visitors.is-map-open .contact-map{pointer-events:auto}
 /* Keep focus feedback on the buttons themselves, without outer rings. */
 :is(.lightbox-close,.branch-close,.film-detail-close,.contact-close,.film-watch-tools button,.fold-image-viewer>button):is(:focus,:focus-visible){outline:none!important;box-shadow:none!important}
