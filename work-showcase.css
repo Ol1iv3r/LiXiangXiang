@@ -311,3 +311,11 @@ html:has(.home-contact-dialog[open]){overflow:hidden}
   .document-controls button{min-width:36px;min-height:36px}
   .document-controls{column-gap:5px;row-gap:0}
 }
+
+/* Trim the thin export border in the supplied Curiosity / Mindset stills.
+   Keep originals intact and use the same crop in previews and enlarged views. */
+.film-preview-frame img:is([src*="/curiosity/frame-"],[src*="/a-great-mindset-person/frame-"]){transform:scale(1.025)}
+.film-preview-frame:hover img:is([src*="/curiosity/frame-"],[src*="/a-great-mindset-person/frame-"]){transform:scale(1.06)}
+.branch-director .branch-photos button{overflow:hidden}
+.branch-director .branch-photos img:is([src*="/curiosity/frame-"],[src*="/a-great-mindset-person/frame-"]){transform:scale(1.025)}
+#lightbox-image:is([src*="/curiosity/frame-"],[src*="/a-great-mindset-person/frame-"]){clip-path:inset(1.2%)}

@@ -1,4 +1,5 @@
 import {profile,cover} from './content.js';
+import {getVisitorStats} from './visitors.js';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function renderContact(){return `<section id="contact" class="contact-section" aria-label="Contact me"><button class="contact-close" data-contact-close aria-label="Close contact">×</button><div class="contact-layout"><div class="contact-info"><h2 class="contact-name"><img src="${cover.nameLogo}" alt="李想想"></h2><a class="contact-row" href="mailto:${esc(profile.email)}"><small>Email</small><span>${esc(profile.email)}</span><b>↗</b></a><a class="contact-row" href="${cover.instagram}" target="_blank" rel="noopener noreferrer"><small>Instagram</small><span>@yrdzz_</span><b>↗</b></a><a class="contact-row" href="${profile.linkedin}" target="_blank" rel="noopener noreferrer"><small>LinkedIn</small><span>Xiang Li</span><b>↗</b></a><div class="contact-row contact-phones"><small>Phone</small><div>${profile.phones.map(phone=>`<a href="tel:${phone.replace(/ /g,'')}">${esc(phone)} ↗</a>`).join('')}</div></div></div><aside class="contact-visitors" aria-label="Visitor regions"><div class="contact-map-slot"><div class="contact-map"><svg class="world-map" viewBox="0 0 1000 490" role="img" aria-label="Visitor regions map"><defs><pattern id="contact-dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#626962"/></pattern></defs><g fill="url(#contact-dots)"><path d="M75 98l55-39 90-15 78 28 42 49-25 36-59 9-19 51-38 19-5 41-39-19-21-53-46-23-13-51zm185 173 46 13 39 48-13 53-28 30-20 40-22-40-5-62-29-35zM350 40l43-13 30 18-10 42-32 27-23-28zM439 108l34-29 44 1 29 27-12 26-43-1-8 35-39 6-18-24zM444 181l51-24 61 14 42 43-24 34-8 46-35 51-25-12-9-44-37-23-12-40-30-19zM535 91l39-31 122-13 115 17 75 37 38 43-38 26-40-12-14 53-42 35-15-45-46 7-30 46-40-31-10-38-57-15-17-46-41 9zM743 260l27-16 23 22 47 11-5 18-46-10zM789 334l42-30 53 7 33 42-17 31-65 5-46-26zM939 382l10 5-11 33-13 4zM120 461l184-9 186 5 143-5 162 9 61 13H131z"/></g><g stroke="#535851" stroke-width=".5" fill="none" opacity=".25"><path d="M20 245h960M500 15v460"/><ellipse cx="500" cy="245" rx="480" ry="225"/></g><g data-country-markers></g></svg><div class="visitor-country-list"></div></div></div><div class="contact-region-stat"><strong data-contact-regions hidden></strong><button type="button" class="visitor-map-trigger" aria-label="Enlarge visitor regions map" aria-expanded="false">visitor regions</button></div><div class="contact-region-list"></div></aside></div></section>`;}
 export function contactScrollTop(root){
@@ -32,13 +33,20 @@ export function initContact(root){
  const schedule=()=>{if(!frame)frame=requestAnimationFrame(update);};
  window.addEventListener('scroll',schedule,{passive:true,signal});window.addEventListener('resize',schedule,{passive:true,signal});
  if(ending)root.querySelector('[data-contact-close]').addEventListener('click',()=>window.scrollTo({top:ending.getBoundingClientRect().top+window.scrollY,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}),{signal});
- fetch('/LiXiangXiang/api/visitors',{signal}).then(r=>r.ok?r.json():null).then(data=>{
-  if(data?.status!=='connected')return;
+ const status=root.querySelector('.contact-region-list');
+ status.textContent='Loading visits…';
+ const refresh=()=>getVisitorStats().then(data=>{
+  if(signal.aborted)return;
+  if(data?.status!=='connected'){status.textContent='Statistics not connected';return;}
   const regions=(Array.isArray(data.regions)?data.regions:[]).filter(r=>typeof r.name==='string'&&Number.isSafeInteger(r.visits)&&r.visits>0);
   const count=root.querySelector('[data-contact-regions]');count.hidden=false;count.textContent=regions.length;
+  status.textContent=`${data.visits} ${data.visits===1?'visit':'visits'} · since 10 Oct 2026`;
+  status.title='Country/region totals · one visit per 30-minute browser session. No precise location is stored.';
   renderVisitorCountries(root,regions);
- }).catch(()=>{});
- update();return()=>{c.abort();clearTimeout(mapTimer);cancelAnimationFrame(frame);};
+ }).catch(()=>{if(!signal.aborted)status.textContent='Statistics temporarily unavailable';});
+ refresh();
+ const refreshTimer=setInterval(()=>{if(!document.hidden)refresh();},60000);
+ update();return()=>{c.abort();clearInterval(refreshTimer);clearTimeout(mapTimer);cancelAnimationFrame(frame);};
 }
 
 const countryCenters={CN:[35,105],HK:[22.3,114.2],US:[38,-97],GB:[54,-2],FR:[46,2],DE:[51,10],JP:[36,138],KR:[36,128],SG:[1.35,103.8],AU:[-25,134],CA:[57,-106],IN:[22,79],IT:[42,12],ES:[40,-4],BR:[-14,-52],RU:[61,100],NZ:[-41,174],TW:[23.7,121],MY:[4,102],TH:[15,101],ID:[-2,118],PH:[13,122],VN:[16,108],NL:[52,5],SE:[62,15],CH:[47,8],AE:[24,54],ZA:[-29,24],MX:[23,-102]};

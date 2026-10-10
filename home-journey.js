@@ -1,7 +1,8 @@
 import { createJourneyWheelGate } from './journey-wheel.js';
 import { createContactPopup } from './contact.js';
 import { initBranchMotion } from './branch-motion.js';
-export function initHomeJourney({onFilter}={}) {
+import { homeTargetTop } from './home-navigation.js';
+export function initHomeJourney() {
   const journey=document.querySelector('.home-journey');
   if(!journey) return ()=>{};
   const controller=new AbortController(),{signal}=controller;
@@ -18,7 +19,6 @@ export function initHomeJourney({onFilter}={}) {
   const motion=matchMedia('(prefers-reduced-motion: reduce)');
   const branches=initBranchMotion(second,motion);
   let disposePopup=null,settleTimer=0,lastScroll=window.scrollY,direction=1,scrollFrame=0;
-  const film=document.querySelector('.home-work .film-experience');
   function scrollToPage(top) {
     cancelAnimationFrame(scrollFrame);clearTimeout(settleTimer);
     const from=window.scrollY,start=performance.now(),duration=560;
@@ -63,17 +63,15 @@ export function initHomeJourney({onFilter}={}) {
   const schedule=()=>{if(!frame)frame=requestAnimationFrame(update);};
   function goTo(target) {
     if(journey.contains(document.activeElement))document.activeElement.blur();
-    let top=journey.offsetTop;
-    if(target==='roles')top+=stage.clientHeight;
-    if(target==='work')top=film.getBoundingClientRect().top+window.scrollY;
     if(target==='contact'){disposePopup?.();disposePopup=createContactPopup();return;}
-    scrollToPage(top);
+    const top=homeTargetTop(document,target,window.scrollY);
+    if(top!==null)scrollToPage(top);
   }
   journey.addEventListener('click',event=>{
     const destination=event.target.closest('[data-home-target]');
     if(!destination)return;
+    if(event.button>0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
     event.preventDefault();
-    if(destination.dataset.coverFilter)onFilter?.(destination.dataset.coverFilter);
     goTo(destination.dataset.homeTarget);
   },{signal});
   window.addEventListener('scroll',()=>{direction=window.scrollY>=lastScroll?1:-1;lastScroll=window.scrollY;schedule();clearTimeout(settleTimer);if(!scrollFrame)settleTimer=setTimeout(settle,180);},{passive:true,signal});

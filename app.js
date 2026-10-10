@@ -1,4 +1,5 @@
 import { initHomeReload } from './home-navigation.js';
+import { startVisitorSession, getVisitorStats } from './visitors.js';
 import { openBooklet } from './intro-media.js';
 import { contactScrollTop } from './contact.js';
 import { renderWorkShowcase, renderWorkDetail, initWorkShowcase } from './work-showcase.js';
@@ -99,18 +100,16 @@ function worldMap() {
 }
 
 function footprints() {
-  return `<section class="section page-section footprints-page">${pageHeading('03','SMALL WORLD, REAL CONNECTIONS',l('很高兴，<em>在这里遇见你。</em>','Glad you <em>found your way here.</em>'),l('影像让我们跨越距离。这一页，留给来自世界各处的目光。','Images cross distances. This page is for the people on the other side of the screen.'))}<div class="map-panel"><span class="eyebrow map-label">A MAP OF OUR ENCOUNTERS</span>${worldMap()}<div class="map-message"><i></i><span id="visitor-status">${l('正在读取真实统计状态…','Checking verified visitor data…')}</span></div></div><div class="visitor-stats"><div><strong id="region-count">—</strong><span>${l('已记录的国家与地区','Countries & regions recorded')}</span></div><div><strong id="visit-count">—</strong><span>${l('已验证访问','Verified visits')}</span></div><p>${l('只记录真实的相遇。<br>本地预览不推测访客的位置。','Only real encounters.<br>Local preview never guesses a visitor’s location.')}</p></div><div id="region-list"></div><div class="privacy-note"><span>↳</span><p>${l('访客统计将在正式上线并连接统计服务后启用。当前没有收集访问位置，也没有模拟数字。未来只展示国家／地区层级的汇总数据。','Visitor statistics will activate after deployment and analytics integration. No locations are collected and no numbers are simulated in this preview. Only country-level aggregates will be displayed.')}</p></div></section>`;
+  return `<section class="section page-section footprints-page">${pageHeading('03','SMALL WORLD, REAL CONNECTIONS',l('很高兴，<em>在这里遇见你。</em>','Glad you <em>found your way here.</em>'),l('影像让我们跨越距离。这一页，留给来自世界各处的目光。','Images cross distances. This page is for the people on the other side of the screen.'))}<div class="map-panel"><span class="eyebrow map-label">A MAP OF OUR ENCOUNTERS</span>${worldMap()}<div class="map-message"><i></i><span id="visitor-status">${l('正在读取真实统计状态…','Checking verified visitor data…')}</span></div></div><div class="visitor-stats"><div><strong id="region-count">—</strong><span>${l('已记录的国家与地区','Countries & regions recorded')}</span></div><div><strong id="visit-count">—</strong><span>${l('已验证访问','Recorded visits')}</span></div><p>${l('只记录真实的相遇。<br>本地预览不推测访客的位置。','Only real encounters.<br>Local preview never guesses a visitor’s location.')}</p></div><div id="region-list"></div><div class="privacy-note"><span>↳</span><p>${l('访客统计将在正式上线并连接统计服务后启用。当前没有收集访问位置，也没有模拟数字。未来只展示国家／地区层级的汇总数据。','Country/region totals are stored across visits. No IP addresses or precise locations are stored. A browser session counts once within 30 minutes.')}</p></div></section>`;
 }
 
 function credits() {
-  return `<section class="section page-section credits-page">${pageHeading('—','ABOUT THIS PREVIEW',l('素材与<em>说明。</em>','About this <em>preview.</em>'),l('这是一份等待真实故事的作品集框架。','A portfolio framework, waiting for your real stories.'))}<div class="prose"><h2>${l('内容状态','Content status')}</h2><p>${l('目前的作品名称、简介、创作理念与个人陈述均为版式示例，不代表真实履历、个人创作或申请材料。正式提交前，请替换为你自己的作品与经历。','Project titles, descriptions, creative statements, and biography are layout placeholders. They do not represent a real creative history or application. Replace them with your own material before submitting.')}</p><h2>${l('影像素材','Visual assets')}</h2><p>${l('封面背景、Logo 与 slogan 均使用你提供的素材。内页其他摄影仍为占位素材。来源说明见项目 ASSETS.md。','The cover background, logo, and slogan use your supplied assets. Other images on inner pages remain placeholders. Sources are listed in ASSETS.md.')}</p><h2>${l('访客隐私','Visitor privacy')}</h2><p>${l('本地版本不使用分析 Cookie，不调用 IP 地理定位，不采集位置。浏览器只在本地保存语言偏好。访客统计接口默认返回未连接状态。','The local version uses no analytics cookies, IP geolocation, or location collection. The analytics endpoint reports that no provider is connected.')}</p></div><a class="text-link" href="#/">${l('回到首页','Back home')} ↗</a></section>`;
+  return `<section class="section page-section credits-page">${pageHeading('—','ABOUT THIS PREVIEW',l('素材与<em>说明。</em>','About this <em>preview.</em>'),l('这是一份等待真实故事的作品集框架。','A portfolio framework, waiting for your real stories.'))}<div class="prose"><h2>${l('内容状态','Content status')}</h2><p>${l('目前的作品名称、简介、创作理念与个人陈述均为版式示例，不代表真实履历、个人创作或申请材料。正式提交前，请替换为你自己的作品与经历。','Project titles, descriptions, creative statements, and biography are layout placeholders. They do not represent a real creative history or application. Replace them with your own material before submitting.')}</p><h2>${l('影像素材','Visual assets')}</h2><p>${l('封面背景、Logo 与 slogan 均使用你提供的素材。内页其他摄影仍为占位素材。来源说明见项目 ASSETS.md。','The cover background, logo, and slogan use your supplied assets. Other images on inner pages remain placeholders. Sources are listed in ASSETS.md.')}</p><h2>${l('访客隐私','Visitor privacy')}</h2><p>${l('本地版本不使用分析 Cookie，不调用 IP 地理定位，不采集位置。浏览器只在本地保存语言偏好。访客统计接口默认返回未连接状态。','Local previews are not counted. The public website stores country/region totals without saving IP addresses or precise locations. A random browser session ID prevents duplicate counts within 30 minutes.')}</p></div><a class="text-link" href="#/">${l('回到首页','Back home')} ↗</a></section>`;
 }
 
 async function loadVisitors() {
   try {
-    const response = await fetch('/LiXiangXiang/api/visitors');
-    if (!response.ok) throw new Error('Unavailable');
-    const data = await response.json();
+    const data = await getVisitorStats();
     if (!$('#visitor-status')) return;
     if (data.status !== 'connected') {
       $('#visitor-status').textContent = l('等待第一次远方的相遇 · 统计尚未连接','Waiting for our first encounter · analytics not connected');
@@ -153,7 +152,7 @@ function render({scroll=true}={}) {
   mountWork();
   if(route==='/footprints') loadVisitors();
   if(journeyRoute) {
-    cleanupHomeJourney = initHomeJourney({onFilter:updateEmbeddedWork});
+    cleanupHomeJourney = initHomeJourney();
     enterCover();
     const align=()=>{
       if(!$('.home-journey')||(location.hash.slice(1)||'/')!==route)return;
@@ -217,4 +216,5 @@ history.scrollRestoration='manual';
 initHomeReload(document,window);
 window.addEventListener('hashchange',()=>render());
 window.addEventListener('pageshow',event=>{ if(event.persisted && (!location.hash || location.hash==='#/')) render({scroll:false}); });
+startVisitorSession();
 render({scroll:false});
