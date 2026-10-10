@@ -1,10 +1,10 @@
-import { initHomeReload } from './home-navigation.js?v=eb490fa4bc34';
-import { startVisitorSession, getVisitorStats } from './visitors.js?v=eb490fa4bc34';
-import { openBooklet } from './intro-media.js?v=eb490fa4bc34';
-import { contactScrollTop } from './contact.js?v=eb490fa4bc34';
-import { renderWorkShowcase, renderWorkDetail, initWorkShowcase } from './work-showcase.js?v=eb490fa4bc34';
-import { initHomeJourney } from './home-journey.js?v=eb490fa4bc34';
-import { profile, cover, roles, projects, photography, reviews } from './content.js?v=eb490fa4bc34';
+import { initHomeReload } from './home-navigation.js?v=905f97e85689';
+import { startVisitorSession, getVisitorStats } from './visitors.js?v=905f97e85689';
+import { openBooklet } from './intro-media.js?v=905f97e85689';
+import { contactScrollTop } from './contact.js?v=905f97e85689';
+import { renderWorkShowcase, renderWorkDetail, initWorkShowcase } from './work-showcase.js?v=905f97e85689';
+import { initHomeJourney } from './home-journey.js?v=905f97e85689';
+import { profile, cover, roles, projects, photography, reviews } from './content.js?v=905f97e85689';
 
 const lang = 'en';
 let activeFilter = 'all';
@@ -215,6 +215,6 @@ document.addEventListener('keydown',event=>{
 history.scrollRestoration='manual';
 initHomeReload(document,window);
 window.addEventListener('hashchange',()=>render());
-window.addEventListener('pageshow',event=>{ if(event.persisted && (!location.hash || location.hash==='#/')) render({scroll:false}); });
+window.addEventListener('pageshow',event=>{ if(event.persisted && (!location.hash || location.hash==='#/')) render(); });
 startVisitorSession();
-render({scroll:false});
+render();

@@ -141,7 +141,7 @@ export const categories = {
   documentary:{zh:'纪录片',en:'Documentary'}, ai:{zh:'AI 短片',en:'AI film'},
   tvc:{zh:'商业广告',en:'TVC'}, ongoing:{zh:'创作中',en:'In progress'}
 };
-export { photography } from './photography.js?v=eb490fa4bc34';
+export { photography } from './photography.js?v=905f97e85689';
 export const reviews = [
   {title:{zh:'一部让我重新理解时间的电影',en:'A film that changed my sense of time'},topic:{zh:'关于时间与记忆',en:'On time & memory'},text:{zh:'在这里添加你喜爱的电影、导演与一篇真正属于你的影评。可以从一个镜头开始，谈谈它为什么让你停留，以及它如何影响你的创作。',en:'Add a favorite film, its director, and your own reflection. Start with a frame: why it stayed with you, and how it shaped the way you make images.'}},
   {title:{zh:'镜头之外，还有什么？',en:'What lives beyond the frame?'},topic:{zh:'关于观看与表达',en:'On seeing & expression'},text:{zh:'这里可以记录第二部喜爱的电影。关注具体的声音、构图或叙事选择，让你的观看方式成为个人作品集的一部分。',en:'A second film reflection can live here. Look closely at a sound, a composition, or a narrative choice, and make your way of seeing part of the portfolio.'}}

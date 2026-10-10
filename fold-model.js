@@ -1,6 +1,6 @@
-import * as THREE from './vendor/three/three.module.js?v=eb490fa4bc34';
-import {OrbitControls} from './vendor/three/OrbitControls.js?v=eb490fa4bc34';
-import {GLTFLoader} from './vendor/three/GLTFLoader.js?v=eb490fa4bc34';
+import * as THREE from './vendor/three/three.module.js?v=905f97e85689';
+import {OrbitControls} from './vendor/three/OrbitControls.js?v=905f97e85689';
+import {GLTFLoader} from './vendor/three/GLTFLoader.js?v=905f97e85689';
 const BASE='/LiXiangXiang/assets/work/the-fold/process/models/';
 const entries={s3:{label:'S3 / The uphill street',note:'A real 15° slope, upright façades and a continuous cart route. Exported from the S3 v02 Blender scene.'},s9:{label:'S9 / Entering the depot',note:'Check the loaded cart’s route, doorway clearance and the worker’s position. Exported from the S9 v01 Blender scene.'},s16:{label:'S16 / The final crossing',note:'A small figure against the city: left hand holds the board, right hand stays on the cart. Exported from S16 v05 white blocking.'}};
 export function mountFoldModel(host){

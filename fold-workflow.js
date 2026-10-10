@@ -12,8 +12,8 @@ export function createFoldWorkflow(host){
   active=key;root.querySelectorAll('[role=tab]').forEach(b=>{const yes=b.dataset.foldTab===key;b.setAttribute('aria-selected',yes);b.tabIndex=yes?0:-1;});
   root.querySelectorAll('[role=tabpanel]').forEach(p=>p.hidden=p.id!=='fold-panel-'+key);reading.scrollTo({top:0,behavior:'instant'});
   if(!ready)return;
-  if(key==='motion'&&!disposeModel){disposeModel=()=>{};try{const {mountFoldModel}=await import('./fold-model.js?v=eb490fa4bc34');if(!destroyed)disposeModel=mountFoldModel(root.querySelector('.fold-model'));}catch{if(!destroyed)root.querySelector('.fold-model').textContent='The 3D viewer could not load. Please reopen Explore to retry.';}}
-  if(key==='canvas'&&!disposeMap){disposeMap=()=>{};try{const {mountFoldCanvas}=await import('./fold-canvas.js?v=eb490fa4bc34');if(!destroyed)disposeMap=mountFoldCanvas(root.querySelector('.fold-map'));}catch{if(!destroyed)root.querySelector('.fold-map').textContent='The canvas preview could not load. Open the live canvas below.';}}
+  if(key==='motion'&&!disposeModel){disposeModel=()=>{};try{const {mountFoldModel}=await import('./fold-model.js?v=905f97e85689');if(!destroyed)disposeModel=mountFoldModel(root.querySelector('.fold-model'));}catch{if(!destroyed)root.querySelector('.fold-model').textContent='The 3D viewer could not load. Please reopen Explore to retry.';}}
+  if(key==='canvas'&&!disposeMap){disposeMap=()=>{};try{const {mountFoldCanvas}=await import('./fold-canvas.js?v=905f97e85689');if(!destroyed)disposeMap=mountFoldCanvas(root.querySelector('.fold-map'));}catch{if(!destroyed)root.querySelector('.fold-map').textContent='The canvas preview could not load. Open the live canvas below.';}}
  };
  function openImage(trigger){
   closeImage?.();const img=trigger.querySelector('img');const overlay=document.createElement('div');overlay.className='fold-image-viewer';overlay.setAttribute('role','dialog');overlay.setAttribute('aria-modal','true');overlay.setAttribute('aria-label',img.alt);
