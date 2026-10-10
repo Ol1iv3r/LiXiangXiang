@@ -1,10 +1,10 @@
-import { initHomeReload } from './home-navigation.js';
-import { startVisitorSession, getVisitorStats } from './visitors.js';
-import { openBooklet } from './intro-media.js';
-import { contactScrollTop } from './contact.js';
-import { renderWorkShowcase, renderWorkDetail, initWorkShowcase } from './work-showcase.js';
-import { initHomeJourney } from './home-journey.js';
-import { profile, cover, roles, projects, photography, reviews } from './content.js';
+import { initHomeReload } from './home-navigation.js?v=eb490fa4bc34';
+import { startVisitorSession, getVisitorStats } from './visitors.js?v=eb490fa4bc34';
+import { openBooklet } from './intro-media.js?v=eb490fa4bc34';
+import { contactScrollTop } from './contact.js?v=eb490fa4bc34';
+import { renderWorkShowcase, renderWorkDetail, initWorkShowcase } from './work-showcase.js?v=eb490fa4bc34';
+import { initHomeJourney } from './home-journey.js?v=eb490fa4bc34';
+import { profile, cover, roles, projects, photography, reviews } from './content.js?v=eb490fa4bc34';
 
 const lang = 'en';
 let activeFilter = 'all';
