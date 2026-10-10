@@ -1,0 +1,325 @@
+{
+  "scenes": [
+    {
+      "title": "Grandmother — character reference",
+      "prompt": "Character reference sheet, multiple views: front, side, back, front close-up, top-down view. Subject: A weathered, authentic local Hong Kong female street scavenger in her 60s. She has typical Southern Chinese Cantonese grassroots facial features, high cheekbones, and sun-weathered rough skin. She has a severe 90-degree bent spine (permanently hunched back). She wears a faded loose thin dark-floral shirt, a worn-out front apron with a zipper pocket, and oversized faded Crocs shoes. Her hair is tied back, slightly messy with sweat. Her expression is calm, resilient, and restrained. Realistic photographic style, not illustrated or 3D rendered. Clean light gray background. Views arranged in a grid layout like a professional character design sheet. Additional detail swatches at the bottom. Labels for each view. Ultra detailed, photorealistic, cinematic quality, 35mm film grain, natural lighting, --ar 16:9 --raw --v 6",
+      "edits": [],
+      "attemptCount": 1,
+      "image": "character1.png",
+      "imageLabel": "Selected reference"
+    },
+    {
+      "title": "Recycling worker — character reference",
+      "prompt": "Character reference sheet, multiple views: front, side, back, front close-up, top-down view. Subject: A mature, authentic local Hong Kong male worker at a scrap recycling station in his late 30s to early 40s. He has typical Hong Kong working-class mature facial features, slight stubble, and a sinewy build. He looks pragmatic, weather-beaten, and street-smart. He wears a faded, sweat-stained t-shirt, dark casual work trousers, and worn-out work boots. He has slightly unkempt short hair, a cigarette tucked behind his ear, and a casual slouchy posture. Realistic photographic style, not illustrated or 3D rendered. Clean light gray background. Views arranged in a grid layout like a professional character design sheet. Additional detail swatches at the bottom. Labels for each view. Ultra detailed, photorealistic, cinematic quality, 35mm film grain, natural lighting, --ar 16:9 --style raw --v 6.0",
+      "source": "Original prompt · supplied by the filmmaker",
+      "edits": [],
+      "attemptCount": 1,
+      "image": "character3.png",
+      "imageLabel": "Selected reference"
+    },
+    {
+      "title": "Fruit-shop owner — character reference",
+      "prompt": "Character reference sheet, multiple views: front, side, back, front close-up, top-down view. Subject: A warm and pragmatic authentic local Hong Kong grassroots fruit stand owner (Kai-fong style) in his 40s. He has typical Hong Kong middle-aged Cantonese facial features and slightly tanned skin. He has a slightly sturdy build, wearing a casual faded cotton polo shirt, casual shorts, a practical waist pouch for collecting money, and a small sweat towel draped over his shoulder. Friendly, working-class face with a subtle, sincere smile. Realistic photographic style, not illustrated or 3D rendered. Clean light gray background. Views arranged in a grid layout like a professional character design sheet. Additional detail swatches at the bottom. Labels for each view. Ultra detailed, photorealistic, cinematic quality, 35mm film grain, natural lighting, --ar 16:9 --style raw --v 6.0",
+      "source": "Original prompt · supplied by the filmmaker",
+      "edits": [],
+      "attemptCount": 1,
+      "image": "character2.png",
+      "imageLabel": "Selected reference"
+    },
+    {
+      "title": "Handcart — reference sheet",
+      "prompt": "Photographic reference sheet of one black, rusted four-wheel iron handcart, front/side/top views and a close material detail, consistent dimensions across views, realistic wear and construction. Rusted tubular iron frame, open metal-mesh bed, visible empty spaces through the base. Keep the same four wheels, frame proportions and handle geometry in every view.",
+      "source": "Adapted from saved workflow notes · original submission unavailable",
+      "image": "handcart.jpg",
+      "edits": [],
+      "attemptCount": 1,
+      "imageLabel": "Selected reference"
+    },
+    {
+      "title": "Intersection — wide framing",
+      "prompt": "Cinematic wide shot, perfectly centered symmetrical composition, eye-level street POV from a distance. A strict and literal T-shaped street junction in Hong Kong. In the immediate foreground, a continuous horizontal road crosses the bottom of the frame from left to right. A narrower vertical street branches off perpendicularly from the exact center of this horizontal road and extends deep into the background, forming a perfect letter \"T\". The left and right sides of the frame are heavily dominated by wide street corners and expansive building facades of old Tong Lau. Prominent yellow road markings on the horizontal street. Sparse traffic: a few iconic red taxis driving horizontally across the foreground. Bright overcast day, soft diffused daylight, realistic film tones. Several people on the street with their umbrella. Directed by Edward Yang, style of Yi Yi (2000), 35mm film photography, soft contrast, subtle film grain.\n\n--no people, human, pedestrians, crowd, dark, gloomy, heavy rain, sunny, bright shadows   no people, human, pedestrians, crowd, dark, gloomy, heavy rain, sunny, bright shadows --ar 4:3 --raw --v 7",
+      "edits": [
+        "remove the car and text\n\n--ar 77:58 --profile 3wlhx9t"
+      ],
+      "attemptCount": 5,
+      "image": "canvas/003.webp",
+      "imageLabel": "Selected scene reference",
+      "findings": "Scale was repeatedly corrected by using road position and projected figure height rather than writing only “make the grandmother smaller.” The final prompt used an approximately one-tenth-frame figure height as a compositional anchor.",
+      "findingsSource": "The Fold / portfolio-workflow / 01-text-to-image.md and The-Fold-Workflow-EN.md"
+    },
+    {
+      "title": "Fruit shop — side view",
+      "prompt": "Cinematic wide shot, strict 2D side-profile lateral cross-section view, completely flat head-on perspective from across the street, eye-level POV. The wet asphalt street is a narrow strip at the very bottom. A continuous row of iconic Hong Kong pedestrian metal railings runs horizontally across the foreground. Behind the railings, three traditional Hong Kong street shops are lined up, all clearly open for business with warm interior lights on, but completely empty of people. On the left, a brightly lit local convenience store with open doors. In the exact center, a local fruit stand under a red canvas awning, featuring a clear, accessible open entrance walkway leading inside the shop, flanked by colorful fruits. On the right, a traditional Hong Kong restaurant (Cha Chaan Teng) with open glass doors and glowing signs. On the sidewalk, specifically positioned on the right side of the fruit stand, is a rusty iron trolley. A concentrated, moderate pile of folded cardboard boxes is neatly gathered around this trolley on the right side, not scattered everywhere. Bright overcast day, soft diffused daylight. Completely empty scene, ghost town, absolutely no people. Directed by Edward Yang, style of Yi Yi (2000), 35mm film photography, muted natural colors.\n\n--no people, human, pedestrians, boss, customers, diagonal angle, 3D perspective, vanishing point, sprawling messy boxes   no people, human, pedestrians, boss, customers, diagonal angle, 3D perspective, vanishing point, sprawling messy boxes --ar 4:3 --raw --v 7",
+      "edits": [
+        "On the sidewalk behind the metal railings, specifically piled on the LEFT side of the fruit stand, there is a stacked pile of cardboard boxes in various different colors (such as faded red, blue, green, and traditional brown). The red canvas awning needs to be opened wide.\n\n--ar 77:58 --profile 3wlhx9t",
+        "The hue is slightly greener, making the streetlights' glow appear dimmer.\n\n--ar 77:58 --profile 3wlhx9t"
+      ],
+      "attemptCount": 3,
+      "image": "canvas/002.webp",
+      "imageLabel": "Selected scene reference",
+      "findings": "The production changed the slope into a real, approximately fifteen-degree uphill street. A Blender camera helped distinguish an actual slope from a rotated photograph, while keeping the buildings and rail posts upright.",
+      "findingsSource": "The Fold / portfolio-workflow / 01-text-to-image.md and The-Fold-Workflow-EN.md"
+    },
+    {
+      "title": "Fruit shop — closing time",
+      "prompt": "Cinematic extreme wide shot, camera pulled back slightly further, wider framing, strict 2D side-profile lateral cross-section view, completely flat head-on perspective from across the street, eye-level POV. The wet asphalt street is a narrow strip at the very bottom. A continuous row of iconic Hong Kong pedestrian metal railings runs horizontally across the foreground. Behind the railings, three traditional Hong Kong street shops are lined up, all clearly open for business with warm interior lights on, but completely empty of people. On the left, a brightly lit local convenience store. In the exact center, a local fruit stand under a red canvas awning, featuring a clear open entrance walkway leading inside. On the sidewalk behind the metal railings, specifically piled on the LEFT side of the fruit stand, there is a stacked pile of cardboard boxes in various different colors (such as faded red, blue, green, and traditional brown). On the right side of the fruit stand, a rusty iron trolley is parked. On the far right, a traditional Hong Kong restaurant (Cha Chaan Teng) with open doors. Bright overcast day, soft diffused daylight. Completely empty scene, ghost town, absolutely no people. Directed by Edward Yang, style of Yi Yi (2000), 35mm film photography, muted natural colors.\n\n--no people, human, pedestrians, diagonal angle, 3D perspective, vanishing point, monochromatic boxes, sprawling messy boxes   no people, human, pedestrians, diagonal angle, 3D perspective, vanishing point, monochromatic boxes, sprawling messy boxes --ar 4:3 --raw --v 7",
+      "edits": [
+        "The fruit on the shelf has disappeared; the shelf is empty. The pile of trash to the left of the fruit shop is gone too, but the railing remains. All the other shops are closed.\n\n--ar 77:58 --profile 3wlhx9t",
+        "The pile of trash to the right of the shop is gone。 All pile of trash is gone\n\n--ar 77:58"
+      ],
+      "attemptCount": 3,
+      "image": "canvas/009.webp",
+      "imageLabel": "Selected scene reference",
+      "findings": "For the return, the shop plate kept the same world while emptying the cardboard area and placing the owner outside, sweeping. The brief retained daytime overcast brightness instead of turning the scene into night.",
+      "findingsSource": "The Fold / portfolio-workflow / 01-text-to-image.md and The-Fold-Workflow-EN.md"
+    },
+    {
+      "title": "Uphill street — low camera",
+      "prompt": "Empty uphill street in an old Hong Kong neighborhood during light rain. Camera at 0.8m above pavement, close to the right side pedestrian railing, looking forward along the slope. Weathered dark green metal railing dominates the right foreground, converging into the distance. Left side features aging tong lau ground floor fruit shops and storefronts - faded blue gray plaster, peeling paint, metal shutters, drainage pipes, window AC units, worn tiled walls. Steep 15 degree incline, buildings perfectly vertical. Wide wet pavement in center and left foreground kept clear for compositing. Rain darkened stone tiles, subtle puddles, restrained reflections, overcast diffused daylight, cool desaturated gray green palette, humid atmosphere. Authentic, unglamorous, quiet documentary realism. Subtle 35mm film grain, moderate depth of field, highly photorealistic cinematic location plate, 28mm lens, no dramatic lighting, no staged composition, no readable modern signage. --no people, pedestrians, human figures, elderly woman, handcart, trolley, vehicle in foreground, cardboard, cardboard piles, boxes, garbage bags, rubbish piles, bicycles, motorcycles, umbrellas, animals, mannequins, silhouettes, ghosts, motion blur, neon lighting, cyberpunk, illustration, painting, 3D render, CGI, text overlay, watermark --chaos 0 --ar 4:3 --raw --stylize 75",
+      "edits": [
+        "There are low railings on the curb\n\n--ar 77:58 --profile 3wlhx9t",
+        "The railings are further to the side and shorter.\n\n--ar 77:58 --profile 3wlhx9t"
+      ],
+      "attemptCount": 4,
+      "image": "canvas/024.webp",
+      "imageLabel": "Selected scene reference",
+      "findings": "The camera reference came from a white-model cart-side test, but the location plate needed to remain photographic. The clean location plate kept the low viewpoint and grey-green street appearance without carrying the model shading into the image.",
+      "findingsSource": "The Fold / portfolio-workflow / 01-text-to-image.md and The-Fold-Workflow-EN.md"
+    },
+    {
+      "title": "Roadway — turning viewpoint",
+      "prompt": "Same old Hong Kong neighborhood, rainy weather, architecture, and lighting as the previous frame, shown seconds later. POV from a fixed camera 25 cm above wet vehicle road asphalt, fully inside the road, halfway through a slow heavy left turn. Camera rotated 45 55 degrees left with a subtle 5 degree natural roll. No handcart, cargo, railing, fence, or pedestrian elements visible. Wet asphalt fills the foreground: crisp surface grain, patched road, drainage covers, shallow puddles, faded white and angular yellow Hong Kong lane markings passing diagonally beneath. Aging tong lau apartment blocks on both sides: weathered cream and blue gray façades, rounded corners, old windows, AC units, exposed pipes, faded shops, metal shutters, traffic lights. A single dark gray Hong Kong commercial MPV van approaches front left, middle distance, beginning to brake; front suspension dips, headlights reflect on wet asphalt, windshield dark. Clear road stretch between camera and van. Light rain, overcast diffused daylight, cool desaturated gray green palette, social realist film aesthetic, subtle 35mm grain, deep focus, 24mm wide angle, photorealistic, no motion blur. --no people, pedestrians, elderly woman, human figures, handcart, trolley, cardboard, cardboard pile, visible cargo, pedestrian railing, metal railing, fence, roadside barrier, sidewalk foreground, curb opening, extra cars, duplicated vehicles, visible driver, close-up van, bicycles, motorcycles, crowds, umbrellas, motion blur, shallow depth of field, fisheye distortion, neon cyberpunk lighting, illustration, CGI, 3D render, text overlay, watermark --chaos 0 --ar 4:3 --seed 2707 --raw --stylize 60",
+      "edits": [],
+      "attemptCount": 1,
+      "image": "canvas/027.webp",
+      "imageLabel": "Selected scene reference"
+    },
+    {
+      "title": "Walkway — approaching the road",
+      "prompt": "Empty environmental reference frame, Hong Kong narrow pedestrian walkway, POV fixed camera 25cm above wet pavement, looking slightly upward. Wet rectangular sidewalk tiles dominate foreground with cracks, worn edges, drainage channels, small puddles. Weathered dark green pedestrian railing runs close along right edge, ending ahead at a visible opening and lowered curb where walkway meets a wider vehicle road. Left side: aging Hong Kong ground floor shops beneath tong lau buildings, faded blue gray plaster, peeling paint, metal shutters, external air conditioners, exposed pipes. Camera moving straight toward walkway exit, not yet turning. Wider wet intersection visible beyond opening, no vehicles. Buildings upright, horizon level, strong low angle perspective. Light rain, overcast diffused daylight, cool desaturated gray green palette, restrained wet reflections, social realist Hong Kong film aesthetic, subtle 35mm grain, deep focus, photorealistic location plate, 24mm wide angle lens, no motion blur. --no people, pedestrians, elderly woman, human figures, handcart, trolley, cardboard, cardboard pile, visible cargo, cars, vans, buses, bicycles, motorcycles, umbrellas, rubbish piles, motion blur, shallow depth of field, fisheye distortion, neon lighting, cyberpunk, illustration, CGI, 3D render, text overlay, watermark --chaos 0 --ar 4:3 --seed 2707 --raw --stylize 60",
+      "edits": [],
+      "attemptCount": 1,
+      "image": "canvas/026.webp",
+      "imageLabel": "Selected scene reference"
+    },
+    {
+      "title": "Recycling depot — interior",
+      "prompt": "Cinematic medium-wide shot, deep spatial perspective. Looking OUTWARD from the dimly lit, spacious deep interior of a Hong Kong paper recycling station towards an open entrance door in the far background. Frame-within-a-frame composition. Strict spatial separation. On the LEFT side of the floor sits a flat, heavy industrial weighing scale. On the far RIGHT side, there is a cheap white plastic monobloc armchair with armrests and a slatted back. Positioned just in front of this white chair is a tall metal pedestal stand fan. The standing fan is noticeably taller than the chair, and its blades are pointing directly at the empty chair. The chair and the fan are facing each other. Lining the walls are massive, dense piles of completely flattened, crushed, and folded brown cardboard. The cardboard is tightly bundled together with ropes, heavily creased, showing strong traces of physical labor and recycling processes. Through the distant doorway, a bright, overcast rainy Hong Kong street is visible. Soft diffused cool daylight spills from the wet street deep into the dark interior. Completely empty scene, absolutely no people. Directed by Edward Yang, style of Yi Yi (2000), 35mm film photography, realistic accurate proportions.\n\n--no fully formed boxes, 3D boxes, intact boxes, empty open boxes, people, human, worker, messy garbage dump, sunny, flat lighting   no fully formed boxes, 3D boxes, intact boxes, empty open boxes, people, human, worker, messy garbage dump, sunny, flat lighting --ar 4:3 --raw --v 7",
+      "edits": [
+        "remove the white chair, but not the one at the right\n\n--ar 77:58 --profile 3wlhx9t",
+        "there is a stool placed sideways on the right beside the fan\n\n--ar 77:58 --profile 3wlhx9t"
+      ],
+      "attemptCount": 5,
+      "image": "canvas/006.webp",
+      "imageLabel": "Selected scene reference",
+      "findings": "The paper pile tended to grow too tall and the entrance action felt rushed. A longer duration and a low, consistent stack helped preserve a genuinely clear entrance for the loaded cart.",
+      "findingsSource": "The Fold / portfolio-workflow / 01-text-to-image.md and The-Fold-Workflow-EN.md"
+    },
+    {
+      "title": "Recycling depot — exterior",
+      "prompt": "Cinematic medium shot, static camera, eye-level straight-on POV. The exterior storefront of a Hong Kong paper recycling station on the ground floor of an aged Tong Lau building. The building facade features weathered warm grey concrete and a faded teal canvas awning extending over a clean, dry pavement. The surroundings look exactly like a tidy, regular city street. Under the awning and neatly stacked against the exterior walls are massive piles of completely flattened, crushed, and tightly bundled brown cardboard, showing a strong sense of organized order. The metal rolling shutter of the shop is completely open, revealing a deeply shadowed cavernous interior. Weather: Dry bright overcast day, completely dry asphalt street in the foreground, soft diffused daylight. Muted natural colors. Completely empty scene, ghost town, absolutely no people, no pedestrians, no vehicles. Directed by Edward Yang, style of Yi Yi (2000), 35mm film photography.\n\n--no trash cans, dumpsters, rubbish bins, litter, dirty streets, rain, raindrops, wet, puddles, water, people, human, worker, pedestrians, cars, vehicles, sunny, bright lighting, messy garbage dump, fully formed boxes, 3D boxes, intact boxes, empty open boxes   no trash cans, dumpsters, rubbish bins, litter, dirty streets, rain, raindrops, wet, puddles, water, people, human, worker, pedestrians, cars, vehicles, sunny, bright lighting, messy garbage dump, fully formed boxes, 3D boxes, intact boxes, empty open boxes --ar 4:3 --raw --v 7",
+      "edits": [
+        "The size of the door remains unchanged, and the interior furnishings are the same as in the reference.\n\n--ar 77:58 --profile 3wlhx9t",
+        "The size of the door remains unchanged, while the left side of the interior will be deeper."
+      ],
+      "attemptCount": 7,
+      "image": "canvas/007.webp",
+      "imageLabel": "Selected scene reference",
+      "findings": "A single detailed prompt caused zooming and cropping and confused cart placement. Breaking the action into three passages preserved the wide framing. The cart handle was corrected to screen-left; colour and framing still required careful seam matching.",
+      "findingsSource": "The Fold / portfolio-workflow / 01-text-to-image.md and The-Fold-Workflow-EN.md"
+    },
+    {
+      "title": "Recycling depot — overhead",
+      "prompt": "Strict vertical top down cinematic photograph, camera axis exactly 90 degrees downward, inside a small old fashioned Hong Kong cardboard recycling workshop on a rainy day. Camera mounted ~3.25m above a worn charcoal grey concrete floor with water stains, puddles, muddy shoe prints, and restrained reflections. Muted teal grey and dirty brown palette, dim overcast daylight, aged surfaces, rust, dust, moisture. Far left edge: tall dense stacks of flattened brown cardboard sheets, vertically stored. Rusty rectangular metal cage at lower left beneath them. Upper left centre: heavy black cast iron platform scale holding ~25 30 wet, compressed, slightly warped plain brown cardboard sheets - low compact pile, no text, no imagery. A 25 30cm strip of bare wet concrete visibly separates the wall stack from the scale pile. Lower right, partially cropped: empty rusty four wheel handcart, tubular steel frame, open expanded metal mesh platform, visibly hollow undercarriage, parked diagonally, clearly separated from scale. Large open concrete floor dominates centre. No people, no text, no logos, no floating or intersecting objects, no fisheye distortion. Photorealistic documentary cinematography, subtle film grain, natural imperfections. --chaos 0 --ar 4:3 --raw --stylize 40",
+      "edits": [],
+      "attemptCount": 2,
+      "image": "canvas/036.webp",
+      "imageLabel": "Selected scene reference",
+      "findings": "“Low overhead” was misread as an angled view. Specifying the exact 90-degree orientation and a clear spatial gap fixed the layout. Softer texture avoided an over-sharpened look.",
+      "findingsSource": "The Fold / portfolio-workflow / 01-text-to-image.md and The-Fold-Workflow-EN.md"
+    },
+    {
+      "title": "Red awning — overhead composition",
+      "prompt": "Cinematic extreme top-down bird's-eye view, camera pointing 90-degrees vertical straight down. Orthographic projection, strict geometric and perfectly parallel alignment. Strict vertical spatial division from left to right. On the LEFT side, a large, highly structured, perfectly rectangular red canvas awning of a fruit stand. The edge of the red awning is perfectly parallel to the railing, not tilted or skewed, and extends massively outward to the right, almost touching the metal railing, occupying the entire left section of the frame. In the MIDDLE, a continuous iconic Hong Kong pedestrian metal railing running vertically in a perfectly straight line from top to bottom. The narrow sidewalk area is completely empty and clean. On the RIGHT side, a wet asphalt street. Completely flat top-down perspective, no vanishing point. Bright overcast day, soft diffused daylight. Completely empty scene, absolutely no people. Directed by Edward Yang, style of Yi Yi (2000), 35mm film photography, muted natural colors.\n\n--ar 4:3 --profile 3wlhx9t",
+      "edits": [
+        "The red canvas extends continuously all the way down to the absolute bottom edge of the frame, completely filling the bottom-left corner with no gaps\n\n--ar 77:58 --profile 3wlhx9t",
+        "The composition should include only the red parasol, the wet road, and the railing-nothing else. This creates a more structured image.\n\n--ar 77:58 --profile 3wlhx9t"
+      ],
+      "attemptCount": 4,
+      "image": "canvas/011.webp",
+      "imageLabel": "Selected scene reference",
+      "findings": "A precise vertical layout gave the shot its graphic composition. “Low” referred to the physical camera location, not an angled image; describing the camera as exactly perpendicular avoided the wrong view.",
+      "findingsSource": "The Fold / portfolio-workflow / 01-text-to-image.md and The-Fold-Workflow-EN.md"
+    },
+    {
+      "title": "Cardboard — printed surface",
+      "prompt": "Cinematic extreme close-up, top-down flat lay view, macro photography. A piece of glossy cardboard printed with a vibrant vintage Hong Kong tabloid gossip magazine cover, featuring a glamorous celebrity face, bold colorful typography, and small paparazzi photos. The printed cardboard has been violently and sharply creased and folded completely in half exactly down the middle, severely distorting and fracturing the perfect celebrity face. This folded cardboard is lying flat on a wet, gritty concrete sidewalk pavement. Heavy, rough, ordinary brown cardboard boxes are pressing down heavily on top of it from the edges of the frame, using it as a base layer. Soft diffused daylight with a subtle warm red color cast, indicating the scene is located directly underneath a red canvas awning overhead. Completely empty scene, no real people. Directed by Edward Yang, style of Yi Yi (2000), 35mm film photography, realistic gritty textures.\n\n--no people, hands, fingers, real human, body parts, clean studio floor   no people, hands, fingers, real human, body parts, clean studio floor --ar 4:3 --raw --v 7",
+      "edits": [],
+      "attemptCount": 1,
+      "image": "canvas/000.webp",
+      "imageLabel": "Selected scene reference"
+    },
+    {
+      "title": "Street — low upward view",
+      "prompt": "Cinematic low-angle POV shot, upward tilt perspective. Camera positioned around knee-height, roughly 20 cm above the dry pavement, tilted steeply upward. Looking up at the weathered facades of Hong Kong old composite buildings, external air conditioning compressors, hanging vintage bilingual street signboards, and tangled overhead wires against a narrow overcast sky. Pedestrian metal railings visible along the lower peripheral edges. Dry bright overcast day, soft diffused daylight, cool muted film palette. Urban realism, directed by Edward Yang style, 35mm film photography. Completely empty scene. --ar 77:58 --profile 3wlhx9t",
+      "edits": [],
+      "attemptCount": 1,
+      "image": "canvas/004.webp",
+      "imageLabel": "Selected scene reference"
+    }
+  ],
+  "shots": [
+    {
+      "id": "S1",
+      "title": "S1 — The collector enters the city",
+      "prompt": "【素材说明】\n@图片1用于阿婆的五官、发型、驼背体态与穿着（褪色碎花衬衫、磨旧围裙、洞洞鞋），不采用图片背景、影棚光线和构图，不采用图中任何其他人物。\n@图片2定义唯一一辆黑色四轮折叠铁推车，采用其结构、锈迹、车斗尺寸与车轮比例，不采用图片背景。推车始终在阿婆身前，阿婆在推车正后方，双手始终握着车把手、身体前倾把重量压在把手上推着走；阿婆与推车的相对位置永远不变——阿婆在后、推车在前、紧紧相连，绝不分离，绝不出现推车在阿婆身后，绝不复制第二辆推车。\n\n【一句话概括】\n15 秒写实固定全景：背景严格就是首帧图的香港阴雨天街道；一位永久性驼背的拾荒阿婆推着唯一的黑色铁推车，在画面左侧的中景步道上静止停顿约 5 秒，再缓慢朝画面右侧行走。\n\n【空间分区】\n画面从近到远分两层，两层之间保留一整条车道的纵深距离，绝不重叠。\n第一层前景车道：画面最底部、约占底部五分之一到四分之一高度，离镜头最近。所有车辆只在这一层，车体最大、从左向右高速驶过，带雨雾与轻微运动模糊。任何车辆都不得驶入阿婆所在的纵深层，不得从阿婆身旁、身后或前方经过，不得贴近或包夹阿婆。\n第二层中景步道：比前景车道更靠里。阿婆和推车只在这一层，阿婆的脚落点约在画面高度的五分之三处（60%），全身完整、明显比前景车辆小，绝不进入画面最底部的前景车道。\n\n【全局设定】\n视觉风格：写实纪录片质感，灰绿冷调，阴天漫射光，深景深，35mm 胶片颗粒，轻微暗角，画面要脏、要日常。镜头语言：全景固定镜头，机位约人眼高度、与地平线齐平，全程不推不拉不摇不移，完全静止。角色造型：60 代香港本地女性，偏黄褐暖调肤色，日晒粗糙质感，高颧骨、深眼窝，花白夹杂的深色头发在脑后挽低发髻，几缕碎发被汗黏在额角；褪色宽松深色碎花薄衬衫，磨旧深色前襟围裙（带拉链口袋），穿旧变形的宽松洞洞鞋；永久性 90 度驼背，脊柱几乎与地面平行，视线略微上抬，双手布满老茧、指节粗大。表演核心：阿婆的慢与前景车流的快形成速度对撞，停顿像老手在等一个过得去的时机，动作笃定熟练，身体重心始终压在身前的车把手上。一致性约束：全程保持脸型、五官、发髻、服装不变；全程保持 90 度驼背；全程只有一辆推车，推车始终在阿婆身前。反向要求：不要字幕，不要 BGM，不要任何配乐，只保留环境声与音效，不要慢动作，不要面部特写，不要增加剧本之外的拾荒者或推车，不要戏剧化打光、雨滴特效或升格镜头。\n\n【时间戳分镜】\n0-5 秒：阿婆停在画面左侧的中景步道上（脚落点约画面高度 60%），双手握着身前的推车把手，保持 90 度驼背、完全静止不动，只有极细微的呼吸起伏。画面最底部的前景车道上，红色市区的士、绿色双层九巴与私家车以极快速度从左向右驶过，贴镜头、车身偏大、带雨雾和轻微运动模糊。机位全程不动。\n5-12 秒：阿婆缓慢起步，推着身前的推车以均匀、缓慢、毫不摇摆的速度朝画面右侧行走，身体重心压在把手上，驼背角度不变，推车始终在她身前。她始终在更靠里的中景步道上，与前景车流保持一整条车道的纵深距离。前景车流继续高速从左向右经过，绝不贴近阿婆。\n12-15 秒：阿婆推车走到画面右侧的中景步道区域，仍在画面内，继续缓慢向右。前景车流继续经过。镜头全程固定，不推不拉不摇不移。全程无台词。\n\n【声音设计】\n整条只有环境声，绝对不要 BGM。前景车辆高速驶过的胎噪与气刹声（哧——）、双层巴士低频轰鸣、密集雨声、行人快步踩过积水的脚步声、推车生锈铁件的轻微摩擦声（音量明显低于环境声）。无人物台词。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The sampled frame places her behind a dark metal grid, producing a strong sense of separation from the city. **Finding / revision.** Wide framing helped the social contrast, but spatial depth had to be written explicitly: traffic, pavement, person, and cart must occupy different layers. “Small person” alone did not control perspective or cart placement.\n",
+      "attemptCount": 1,
+      "estimatedTries": 6
+    },
+    {
+      "id": "S2",
+      "title": "S2 — Waiting at the intersection",
+      "prompt": "【素材说明】\n@图片1用于阿婆的五官、发型、驼背体态与穿着（褪色碎花衬衫、磨旧围裙、洞洞鞋），不采用图片背景、影棚光线和构图，不采用图中任何其他人物。\n@图片2定义唯一一辆黑色四轮折叠铁推车，采用其结构、锈迹、车斗尺寸、车轮比例与铁网/金属网格侧板，不采用图片背景。推车始终在阿婆身前，阿婆在推车正后方，双手始终握着车把手、身体前倾把重量压在把手上推着走；阿婆与推车的相对位置永远不变——阿婆在后、推车在前、紧紧相连，绝不分离，绝不出现推车在阿婆身后，绝不复制第二辆推车。\n\n【一句话概括】\n15 秒固定仰视镜头：背景严格就是首帧图的香港唐楼街道；一位永久性驼背的拾荒阿婆推着唯一的黑色铁推车，从画面下半部分入画，缓慢走到两栋唐楼之间的空隙停下，停顿约 4 秒后以相同步伐继续向前，直到走出画面，再空镜 3 秒。\n\n【构图与遮挡】\n低角度仰视固定机位，镜头贴近地面向上拍。画面下半部分是离镜头最近的地面与前景区，画面中上部分是高高耸起的唐楼与两楼之间的空隙。阿婆走到画面中央停下时，低角度下的推车位于前景、遮挡住她身体的下半部，观众透过推车的铁网/金属网格仍能看清她的脸和上半身。她的脸朝向镜头方向，但视线不看向镜头，目光平静地落在别处。\n\n【全局设定】\n视觉风格：写实纪录片质感，灰绿冷调，阴天漫射光，深景深，35mm 胶片颗粒，轻微暗角，画面要脏、要日常，不要干净的商业广告感。镜头语言：固定仰视镜头，机位很低，全程不推不拉不摇不移，完全静止。角色造型：60 代香港本地女性，偏黄褐暖调肤色，日晒粗糙质感，高颧骨、深眼窝，花白夹杂的深色头发在脑后挽低发髻，几缕碎发被汗黏在额角；褪色宽松深色碎花薄衬衫，磨旧深色前襟围裙（带拉链口袋），穿旧变形的宽松洞洞鞋；永久性 90 度驼背，脊柱几乎与地面平行，视线略微上抬，双手布满老茧、指节粗大。表演核心：与镜头1完全一致——动作笃定、缓慢、熟练，身体重心始终压在身前的车把手上，没有多余表情；停顿的几秒里她像老手在等一个过得去的时机。一致性约束：全程保持与镜头1相同的脸型、五官、发髻、碎花衬衫与围裙款式；全程保持 90 度驼背，不许站直、不许改变脊柱角度；全程只有一辆推车，推车始终在阿婆身前。反向要求：不要字幕，不要 BGM，不要任何配乐，只保留环境声与音效，不要慢动作，不要面部特写，不要增加剧本之外的拾荒者或推车，不要戏剧化打光、雨滴特效或升格镜头。\n\n【时间戳分镜】\n0-4 秒：阿婆推着身前的推车从画面下半部分入画，以和镜头1一致的缓慢步幅，走向两栋唐楼之间的空隙（画面中央）。推车在前、阿婆在后，90 度驼背，身体重心压在把手上。\n4-8 秒：阿婆走到画面中央停下。低角度下推车位于前景，遮挡住她身体的下半部，观众透过推车的铁网/金属网格仍能看清她的脸和上半身。她的脸朝向镜头方向，但视线不看向镜头，目光平静地落在别处，保持完全静止约 4 秒。机位全程不动。\n8-12 秒：停顿结束，阿婆以相同步伐继续向前行走，朝唐楼间隙深处、远离镜头的方向前进，身体和推车逐渐变小，始终保持 90 度驼背与\"阿婆在后、推车在前\"的姿态。\n12-15 秒：阿婆完全走出画面。画面回到空无一人的唐楼间隙与街景，保持静止约 3 秒，只有雨滴与轻微的环境动静。镜头全程固定。\n\n【声音设计】\n整条只有环境声，绝对不要 BGM。脚步声踩在湿地面上的声音、推车生锈铁轮滚动的轻微摩擦声、密集的雨声、远处街道隐约的车流胎噪与偶尔的气刹声。无人物台词。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The working frame shows a very small figure and cart against the large empty junction. **Finding / revision.** That scale later became a continuity benchmark for S16. The same location plate could be reused, but its geometry did not by itself specify which direction the returning cart should travel.\n",
+      "attemptCount": 1,
+      "estimatedTries": 7
+    },
+    {
+      "id": "S3",
+      "title": "S3 — One bundle of cardboard",
+      "prompt": "生成一段12秒、4:3画幅、固定机位的写实电影长镜头。\n\n参考关系必须严格区分：\n@图片1只负责香港旧街水果铺的场景、构图、15度上坡道路和物品位置；\n@图片2只负责阿婆的真实外貌、服装和体态；\n@图片3只负责真实四轮铁推车的外观；\n@图片4只负责水果店老板的真实外貌与服装。\n所有人物必须是真实人类，不得出现三维模型、灰色人偶、低多边形角色、塑料假人、游戏角色或预演材质。不要参考或复现任何Blender人物动作、关键帧停顿和机械姿势。\n\n香港旧街水果铺门口，纪实电影质感，低饱和灰绿色，阴天柔和散射光，潮湿沥青略有反光，真实皮肤、旧衣料、锈蚀金属、磨损纸皮和细腻35毫米胶片颗粒。道路真实地向画面右侧上升约15度；路沿、双黄线、人行道和栏杆沿坡上升，建筑墙柱始终竖直，窗台与楼层线保持水平。固定广角全景，摄影机完全锁定，不切镜、不推拉、不摇移、不旋转。\n\n镜头开始时，阿婆和空推车已经在水果铺左侧、栏杆内的人行道上。阿婆是年迈香港女性，严重驼背，腰背长期接近水平，但她仍是有血肉重量的真人；她的呼吸、脚步、肩膀、手肘、手指和衣服都有细小自然变化。\n\n水果店老板身旁只站着一位顾客，顾客位于老板紧邻的侧前方，两人相距约半米。老板必须明确对着这位旁边的顾客说话：老板的双脚和身体留在柜台内，上半身略微侧转，脸、眼睛和嘴巴始终朝向顾客，不朝镜头、街道或阿婆说话。顾客的脸和目光也朝向老板，偶尔点头回应；两人的视线在彼此之间形成清楚、稳定的交流关系。老板说话时只做小幅手势，偶尔指向两人之间的水果，随后马上看回顾客。两人保持在同一小片区域内，不交换位置，不分开，不转身看阿婆，不面对镜头吆喝。这段交流只是安静的背景表演，不抢夺阿婆搬纸皮的主体动作。\n\n阿婆完成一次完整而连贯的搬运动作，中间没有定格、跳帧或逐姿势切换：她先把重心压到双脚，身体顺着驼背姿态自然前探，双手一前一后伸向水果铺左侧、靠近店铺的高周转筐顶部那捆已经存在的压扁纸皮；手指先接触并压住纸边，随后收紧抓握。她屈膝、沉肩、手臂持续发力，把同一整捆纸皮从原堆上抱起。纸捆离开时与下层发生真实摩擦，原处立即露出一个清楚缺口。她不站直，抱着纸捆连续转腰并迈出一小步，肩、肘、手腕和髋部顺势传递重量；动作速度自然加快，一气呵成地把纸捆甩向身旁上坡侧的推车。纸捆直到释放瞬间都与双手保持接触，离手后沿短而连续的重力弧线落进车斗，纸层轻微弯曲、错动，发出沉闷落响。推车因受力轻震一下，四轮始终接触地面并停在原位。阿婆顺着惯性收回双臂，身体轻微回摆，再扶稳推车喘一口气。所有动作之间都有自然的加速、减速、惯性和重心转移，连续流畅，没有木偶感，没有相邻关键姿势之间的突然跳变。\n\n全镜头只搬这一捆：同一捆纸皮从原堆经过阿婆双手连续转移到车斗。原纸堆减少的体积与车上增加的体积完全对应；原处缺口一直保留到镜头结束。其余纸皮、周转筐和右侧纸箱保持原位原量，不自动补齐、不凭空出现、不复制、不消失。阿婆与推车始终位于栏杆内的人行道上，不进入车道。手掌不穿过纸皮，纸捆不穿过人体、栏杆或车架，人物身体不变形，推车不自行下滑。不要增加其他人物、纸箱、推车或杂物。\n\n声音为近处清楚的纸皮摩擦、纸捆落车的闷响、短促的铁架震动和阿婆轻微呼吸；背景只有远处街声，以及老板与顾客低声自然粤语交谈。无配乐、无旁白、无字幕、无水印。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The shop geography and steep pavement line are legible in the wide frame. **Finding / revision.** The initial 30° tilted-building concept became a real 15° uphill street after Blender calibration. Later prompts moved from a vague “throw cardboard” command to a tracked object transfer. The shop background also needed more people and spacing; “one customer in the shop” concentrated all activity in a small doorway.\n",
+      "attemptCount": 3,
+      "estimatedTries": 10
+    },
+    {
+      "id": "S4",
+      "title": "S4 — Folding the printed board",
+      "prompt": "生成一段约10秒、4:3画幅、垂直俯视固定机位的写实电影长镜头。不要上传或引用Blender动画视频；建模只用于确认机位、初始位置与物体布局，不参考建模人物的外形、速度或关键帧动作。\n\n参考关系严格区分：\n@图片1负责香港旧街水果铺外的垂直俯视场景、纸堆位置、横向推车、栏杆、潮湿人行道，以及左侧纸堆顶部那一张红绿彩印的明星食品纸盒；\n@图片2只负责阿婆的真实外貌、年龄、衣着、严重驼背体态；\n@图片3只负责真实四轮铁推车的外观，尤其是锈蚀菱形钢板网镂空底板。\n所有人物必须是真实人类，不出现三维人偶、低多边形角色、塑料皮肤、游戏画面或逐关键帧式机械动作。\n\n摄影机从正上方垂直向下，形成桌面式俯视构图，全程完全锁定，不切镜、不推拉、不摇移、不旋转、不改变焦距。画面上方为店铺侧，下方为栏杆及街道侧。左侧是原有彩色周转筐，筐顶压着一摞大小不一的普通旧纸箱和纸皮；右侧只有一辆横向摆放的推车，推车长轴与下方栏杆平行。推车底板必须是锈蚀菱形钢板网，网孔真实镂空，在边缘没有被纸箱覆盖的位置可以透过网孔看见下方湿地面，绝不能变成实心铁板、木板或黑色平面。推车上的内容必须承接S3末帧：车上已经累计约25—35张较宽的压扁旧纸箱，形成厚实、层数清楚的纸垛；所有纸箱的长边沿推车长轴排列，也就是在俯视画面中与下方栏杆平行。纸垛中央最高约离网面35—45厘米，数量很多但仍低于最高车把；纸箱两端略微错开，破损折翼和潮湿弯边自然伸出。镂空钢网只在车框周边形成窄边，并从少数纸层缝隙中露出。没有绳子、没有压缩成规则纸包、没有窄纸条或木板。所有物体都位于栏杆内侧并保持间隙。\n\n第一帧必须无缝承接S3末帧：阿婆已经站在左侧纸堆与右侧推车之间，位置稍微靠近纸堆，位于推车左端旁边；她弯着腰面对推车，双手靠近推车把手，姿势与上一镜结尾一致。她不能一开始就出现在纸堆靠店铺的一侧，也不能瞬移到明星纸盒旁。\n\n阿婆是行动不便的年迈香港女性，始终保持严重驼背，腰背接近水平，不能挺直身体。她走路迟缓、不稳，每一步都很小：先转动头和肩膀，再慢慢转髋，脚掌贴着地面挪动，膝盖轻微发颤，重心转移清楚。她不会快走、奔跑、突然转身或大跨步。为在约10秒内完成动作，纸堆与推车之间的实际操作距离很短，只需要一至两步小碎步；不要通过加快人物速度压缩时间。\n\n明星纸箱的材质和形态必须从头到尾保持连续：第一帧中它是一个受潮后已经塌扁的白色彩印纸箱，大小必须与左侧垃圾堆里的其他普通纸箱接近，约40厘米宽、30厘米高，绝不能缩成15厘米餐盒，也不能放大成海报。主体必须清楚呈现漂白白卡纸或白色涂布纸板，白色底色、白色切边和磨损的哑光涂层始终可见，绝不能变成牛皮纸棕色材质。纸箱保留被压扁的箱体折翼、接缝和一条穿过主面的中央压痕。主面上是一位完全虚构的东亚男性明星：人物肖像占该可见主面的70%—80%，脸部足够大，中央压痕直接穿过脸部，以便随后对折时把面孔明确分成两段。人像周边只有少量低饱和、做旧的红绿色商业图形，不出现真实品牌、真实明星、可读文字、商标或条码。纸箱沾有污渍、磨损和潮斑，半藏在左侧普通牛皮纸箱之间，一侧边缘被普通纸皮轻微遮住，但脸部和中央压痕不能被遮挡。它与周围垃圾融为一体，不能呈现崭新海报质感。明星纸箱只有一个，不复制、不变成另一种包装。\n\n0—1秒：阿婆保持S3末帧姿势，在推车旁稍作停顿，呼吸带动肩背轻微起伏。她看向左侧纸堆顶部、被普通牛皮纸片部分遮住的小型明星食品纸盒，双手离开推车把手。\n\n1—2.5秒：阿婆保持深度弯腰，缓慢向左转身，以一至两步很小的拖步挪到纸堆旁。上半身、髋部、膝盖和脚步依次转动，动作连续且有迟缓感。她停在纸堆靠店铺的一侧，没有穿过纸堆、栏杆或周转筐。\n\n2.5—4.3秒：白色明星纸箱半藏在左侧垃圾堆顶部的普通牛皮纸箱之间，面积与相邻纸箱接近，约40×30厘米；它与纸堆真实接触，没有悬浮或穿模。可见主面上的人物肖像占比很大，脸部中央压痕清楚可见。阿婆布满老茧的双手自然伸向同一个纸箱：手腕先放低，手指逐根张开，一只手托住纸箱底边，另一只手掀开遮住它边缘的普通纸皮，再将已经塌扁的白色明星纸箱缓慢抽出。她双手移动到横穿人物面孔的中央压痕两侧并扣紧。纸堆只减少这一个明星纸箱，其余纸箱与周转筐保持原位。\n\n4.3—5.2秒：阿婆无法站直，她把重心沉到支撑腿，双手稳住同一个明星纸箱，让带人物面孔的面板朝上；手指死死扣住横穿面孔的中央压痕。膝盖经过短促而清楚的蓄力，只进行一次快速、有力的顶撞。膝盖准确击中压痕，伴随单次清脆的“咔嚓”，纸箱沿压痕迅速对折，印在纸面上的人物面孔被清楚折成两段。只有撞击瞬间速度较快；撞击前后的身体动作仍然迟缓、有重量。彩印图案和折翼跟随纸箱弯曲，不漂浮、不复制；纸板具有真实厚度、折叠阻力和轻微回弹。\n\n5.2—7秒：阿婆仍然弯着腰，双手抱住同一张折好的彩印纸盒，慢慢向右转身，以一至两步小碎步回到横向推车左侧。她不快走，脚掌不离地过高；肩、手肘和手腕随纸盒重量轻微晃动。推车保持静止，不自行溜坡。\n\n7—10秒：阿婆靠近推车后，用左手缓慢抬起车上靠近自己的两三张宽纸箱边缘，各层分别弯起；下方还有很多累计纸层，不能让整座纸垛一起抬起。右手把刚才对折的明星纸箱从推车左侧连续滑入宽纸箱之间，并继续压到接近最底层的位置。明星纸箱边缘与多层旧纸箱发生真实摩擦并逐渐消失。她将它推平，再缓慢放下刚才抬起的纸层。镜头结束时，只露出很小一段暗淡红绿色边缘，阿婆仍保持弯腰姿势，双手刚刚松开。推车里的纸箱长边始终与车身长轴平行，累计纸垛保持35—45厘米的厚实高度，不自动减少、不坍塌、不变成薄层、不自动变整齐，也不出现绳捆；镂空钢网只在车框边缘少量可见。\n\n人物动作必须符合行动不便老人的真实身体力学：呼吸、迟缓转身、小碎步、脚底拖地、手指抓握、腕部旋转、膝盖蓄力、撞击后的回弹和重心恢复自然衔接。左右手动作存在细微时间差，关节持续运动并自然加速、减速。没有定格、跳帧、瞬间换姿势、匀速滑行、机械摆臂、木偶感或突然加速。她从头到尾不能挺直腰，也不能恢复成年轻人的步态。\n\n全镜头只有同一位阿婆、同一辆横向镂空推车和同一个明星纸箱。同一个纸箱依次位于“左侧纸堆—阿婆双手—沿人物面孔压痕对折—推车宽纸箱最底层”，全过程连续可见，不复制、不补回、不瞬移、不凭空消失。推车原有宽纸箱不增殖、不转向、不自动捆扎，镂空钢网不能封闭，其他纸皮、周转筐、栏杆、地砖和店铺结构保持稳定。手掌始终与纸箱保持可信接触；人物、纸箱、纸堆、栏杆和车架互不穿透。不增加额外手臂、手指、腿、人物、纸箱、纸片或推车。\n\n视觉为香港旧街纪实电影质感：严格保持参考场景原有的低饱和灰绿色、阴天柔和散射光、潮湿旧砖地面、店铺结构、栏杆、道路、构图和镜头质感，不重新设计或漂移场景。真实老人皮肤、老人斑、静脉、老茧、指甲和旧衣料纤维清晰自然；明星纸箱必须呈现污旧但明确的白色涂布卡纸、白色切边、磨损哑光层和少量暗淡红绿旧彩印，人物肖像占主面70%—80%，但整体亮度与饱和度经过污渍压低，不能像崭新海报一样抢戏；推车上的宽纸箱保持潮湿牛皮纸质感；锈蚀菱形钢网、钢管车架和细腻35毫米胶片颗粒清晰自然。\n\n声音近距离突出缓慢拖步、衣料摩擦、小纸盒从纸堆抽出的沙沙声、盒身被双掌压平时折翼和插舌连续而轻微的卡纸摩擦声、膝盖沿压痕顶折时单次干净清脆的“咔嚓”、折好纸盒滑入松散牛皮纸片底层的摩擦声和轻微铁架震动；不要使用厚瓦楞纸撕裂声。背景只有微弱街声。无对白、无配乐、无旁白、无字幕、无水印。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The overhead frame clearly shows the portrait-bearing sheet near the cart. **Finding / revision.** Several image versions made the package too large or changed its white coated stock into brown board. An explicit half-face reference was needed because “fold in half” often produced only a partly bent sheet. The cart load was corrected from a loose shallow layer to an accumulated stack.\n",
+      "attemptCount": 2,
+      "estimatedTries": 8
+    },
+    {
+      "id": "S5",
+      "title": "S5 — Leaving the fruit shop",
+      "prompt": "生成一段约10秒、4:3画幅、固定机位的写实电影连续长镜头。采用素材引用生成，不使用首尾帧模式，不上传尾帧，不要求画面在最后强制变成另一张图片。\n\n【素材对应关系】\n@图片1只负责完整场景：香港旧街水果铺、15度右高坡道、固定侧向远景构图、建筑、遮雨棚、果架、周转筐、左右固定纸箱、灰蓝色垃圾桶、栏杆、道路、湿地面，以及阿婆和推车的初始位置。严格保留@图片1中的物体数量和空间关系。\n\n@图片2只负责阿婆的真实外貌、花白低发髻、旧衣、严重驼背体态和老人皮肤质感，不采用图片背景或动作。\n\n@图片3只负责同一辆四轮铁推车的结构：锈蚀钢管车架、四个车轮、把手、镂空菱形钢网底板和真实比例，不采用图片背景、纸箱数量或摆放方式。\n\n@图片4只负责水果店老板的真实外貌与服装，不采用图片背景或动作。老板旁边的顾客沿用@图片1中的人物形象，不复制老板，也不新增顾客。\n\n所有人物必须是真实人类。不得出现三维模型、灰色人偶、低多边形角色、塑料皮肤、游戏画面、定格动画或机械关键帧动作。\n\n【场景和机位】\n完全沿用@图片1的固定广角远景、4:3画幅和侧向切面构图。摄影机全程锁定，不切镜、不推拉、不摇移、不旋转、不变焦、不跟随人物。道路、人行道、栏杆、路沿和双黄线向画面右侧真实上升约15度；建筑墙柱保持竖直，窗台和楼层线保持水平。不能把坡道变平，也不能倾斜建筑。\n\n阴天柔和散射光，潮湿路面略有反光，低饱和灰绿色，真实香港旧街纪实电影质感，细腻35毫米胶片颗粒。店铺、水果、纸箱、周转筐、垃圾桶和栏杆的外形、数量、位置与@图片1一致。\n\n【物体清单锁定】\n可移动组严格只有三个组成部分：同一位阿婆、同一辆推车、@图片1中原本就在推车车框内部的同一堆压扁纸箱。三者始终连接成同一个运动整体向右移动。\n\n车载纸箱只能存在于推车矩形车框内部和车轮上方。它们的数量、外轮廓、堆叠高度、颜色、方向和相对位置全程不变。纸箱不能掉落、增殖、伸到阿婆身后、漂到车头前方、穿过车架或复制。\n\n左侧彩色周转筐上剩余的纸皮、右侧店外靠墙堆放的纸箱，以及灰蓝色垃圾桶全部属于固定背景。它们必须从第一秒到最后一秒保持同一位置、数量、形状、尺寸、阴影和遮挡关系，不跟随推车移动，不在阿婆身边复制，不突然出现或消失。\n\n灰蓝色垃圾桶固定在水果铺门口右侧、栏杆内侧、右侧纸箱堆左边。它具有灰蓝色矩形金属箱体、深色顶边和橙红色顶部细节，下半部被栏杆遮挡。推车经过时可以暂时遮住它；推车离开后只能按照遮挡关系逐渐重新露出，垃圾桶本身不能移动或变形。\n\n阿婆身后一米、推车车头前方一米、阿婆双腿之间、车轮周围和推车经过后的地面必须始终为空，只能出现@图片1原有的湿地砖、栏杆和固定垃圾桶。严禁在这些区域生成纸箱、纸片、纸堆、布袋、木板或新杂物。\n\n【唯一主体动作】\n0—0.8秒：阿婆已经站在@图片1规定的位置，双手握住推车把手，身体严重驼背并向前发力。推车先有极小的受力晃动，四个车轮在0.8秒内开始真实转动。她不松手、不停顿、不踩纸箱、不拿绳子、不系绳，也不检查货物。\n\n0.8—9.5秒：阿婆持续用短小拖步，把同一辆重车沿栏杆内侧人行道缓慢推向画面右侧上坡。运动方向始终向右，轨迹保持在同一条人行道上。前1.5秒由静止自然加速，随后保持缓慢稳定速度，不能在末段突然加速或跳位。\n\n阿婆始终保持严重驼背，腰背接近水平，双手持续接触把手。她的脚掌交替蹬地，一只脚承重，另一只脚只向前挪动小半步，再交换支撑。肩膀、手肘、手腕、髋部和膝盖连续传递重量，衣服和发髻只有轻微自然摆动。她不能站直、奔跑、大跨步、原地停下、重置姿势或突然换到推车另一侧。\n\n推车的四个轮子按照实际位移持续转动，不能锁死滑行、倒转或悬浮。推车、车载纸箱和阿婆作为同一个稳定整体连续移动；内部物体不能重排、变形或复制。\n\n离场过程必须自然发生：车头先接近并越过画面右边缘，随后是前轮、车框内同一堆纸箱、后轮和车把；阿婆始终位于把手后方，最后由身体和后脚依次越过右侧画框边界。只有真正跨过画框边缘的部分才可以看不见。人物和推车不能在画面中央突然消失、淡出、透明、缩小、溶解、变形或瞬移。\n\n9.5—10秒：若阿婆和整辆推车已经自然出画，固定机位停留在空场约0.5秒；若仍有一小部分位于画面右边缘，则保持连续运动直至视频结束，绝不能为了得到空场而突然删除。连续性优先于强制完全出画。\n\n【老板与顾客持续交流】\n老板和顾客从头到尾留在@图片1的店铺门口原位置，两人相距约半米，脸、胸口和视线始终朝向彼此。两人不能冻结成照片，也不能超过0.5秒完全不动。\n\n0—2.5秒：老板注视顾客并自然说话，嘴部持续小幅运动，右手在腰部附近做一次轻微开放手势；顾客看着老板，身体轻微前倾倾听。\n\n2.5—5秒：顾客回应一句并缓慢点头一次；老板放低手，保持注视，轻微眨眼和呼吸。\n\n5—7.5秒：老板短暂指向旁边水果，顾客的目光随手势看向水果，再自然回到老板脸上。\n\n7.5—10秒：顾客做一个很小的单手回应动作，老板轻轻点头。两人继续低声交谈，动作自然错开，不看镜头、不看阿婆、不走出店铺、不换人，也不触碰任何纸箱或垃圾桶。\n\n【连续性硬约束】\n整段只有一个镜头、一条连续时间线和一个主体动作。相邻帧中的阿婆姿态、脚步、手的位置、车轮角度和推车位置只能产生微小连续变化。禁止jump cut、match cut、交叉溶解、动作重置、定格换姿势、循环动作、倒放、抽帧加速或时空跳跃。\n\n推车移走后，被遮挡区域只能露出@图片1本来存在的湿地面、连续栏杆和固定垃圾桶。不能使用纸箱、纸堆或新杂物填补空白，不能留下人物、车轮、纸片、绳索、影子或透明残影。\n\n【声音】\n从第一秒开始持续听到沉重车轮在湿地面上的滚动声、轻微车架震动、车上原有纸板之间的小幅摩擦、阿婆略重的呼吸和短促脚步声。不能出现纸箱落地或新增纸箱碰撞声。背景始终保持老板与顾客低声自然交谈、偶尔短句回应和微弱街声。无配乐、无旁白、无字幕、无水印。",
+      "source": "Original draft",
+      "findings": "**Observed result.** A wide shop view remains while the cart moves along the railing. **Finding / revision.** Combining loading, stepping, tying and departure in seven seconds produced jump cuts. Start/end-frame tests also invented cardboard to bridge two states. The final instruction kept one observable action and used an asset-reference workflow rather than demanding a forced end frame.\n",
+      "attemptCount": 2,
+      "estimatedTries": 9
+    },
+    {
+      "id": "S6",
+      "title": "S6 — Weight on the slope",
+      "prompt": "【素材说明】\n\n@视频1只用于严格控制本镜头的机位、构图、人物与推车的相对位置、遮挡关系、上坡行进方向、跟随速度和完整8秒动作节奏。将视频中的低模人物、低模推车、纸板与空白背景全部重新渲染为真实电影画面；不采用视频中的卡通外形、塑料材质、简化五官、僵硬关节、机械步频和灰色背景。不要改变为横切面侧拍，不要复制低模的逐帧肢体姿势。\n\n生成一段连续8秒、无切镜的写实香港电影镜头。相机保持在推车前侧的低机位，约离地0.8米，镜头从推车前方偏右的位置向后看阿婆；左侧近景始终由车上大量压扁纸板形成强烈透视遮挡，阿婆弯腰用力的上半身位于画面中央，右侧近处是沿坡道向远方收束的深绿色金属护栏。镜头与阿婆和推车同方向、同速度平稳上坡，三者的相对距离与画面尺寸全程基本不变；这是贴着推车移动的前侧跟随镜头，不是正侧面横切拍摄，不横移穿过人物，不环绕、不升降、不推拉、不摇镜、不切换机位。\n\n场景是一条15度上坡的香港旧街。建筑本身保持竖直，只有道路和人行道向上倾斜。左侧是老旧唐楼底层商铺、褪色卷闸、外露管线和旧空调机；右侧护栏连续延伸。天空阴沉，小雨持续落下，石砖路面湿润，环境是冷灰绿色、低饱和、阴天漫射光、轻微35毫米胶片颗粒的纪实电影质感。背景随同向跟拍产生自然轻微运动感，但人物、推车把手和纸板主体保持清楚；不要霓虹灯、商业广告感或夸张景深。\n\n阿婆是瘦小年迈的香港华人女性：深皱纹、晒黑粗糙的皮肤、花白凌乱头发挽成低发髻，穿褪色深色小碎花衬衫、磨旧的深灰围裙和宽松深色裤。她走路不便，腰背严重弯曲，始终无法站直。她不是按低模机械摆动四肢，而是以真实老人缓慢、短促、不均匀的步子艰难上坡：重心很低，脚底谨慎落地，肩膀与躯干随每一步产生细小但连续的重量传递。她将整个胸骨持续压在冰冷的横向铁把手底座上，两只布满老茧的手牢牢握住把手，手掌、胸口与把手始终保持真实接触，不悬空、不穿模。她咬紧牙关，眉头紧绷，呼吸沉重，身体吃力但没有后退。\n\n推车是一辆破旧生锈的四轮钢管平板手推车，底部为镂空菱形金属网和横向支撑杆。车上已有固定数量、累计很厚的压扁旧纸箱，纸板被雨水浸湿后沉重、边缘弯曲，层数和总体积从第一帧到最后一帧完全一致。推车在坡道上持续前进，车轮艰难滚动，遇到路面接缝时产生细小而连续的震颤；纸堆只随车身轻微压动，不新增、不消失、不复制、不飞散、不突然改变高度或方向。\n\n声音只有细雨、湿轮滚过石砖、旧金属轻微震颤、湿纸板摩擦，以及阿婆克制而急促的喘息。无对白、无旁白、无配乐、无字幕。\n\n全程保持同一空间、同一人物、同一辆推车和同一堆纸板，动作必须从上一帧自然延续到下一帧。禁止跳切、瞬移、时间跳跃、动作重置、人物复制、额外路人抢镜、纸箱凭空出现、身体站直、推车结构变形、手脚穿模、镜头转为横切面或突然改变焦段。结尾仍在连续上坡过程中，不停下摆姿势。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The available frame shows the cardboard close to camera and the grandmother straining behind the handle. **Finding / revision.** A purely empty scene image could not convey the mounted viewpoint. Low-front Blender blocking clarified what occupies foreground and how the camera follows without changing the cart/person relationship.\n",
+      "attemptCount": 2,
+      "estimatedTries": 9
+    },
+    {
+      "id": "S7",
+      "title": "S7 — Cargo POV, pavement exit and right turn",
+      "prompt": "The camera is attached low to the load, looking forward from the cart. In one uninterrupted six-second movement it rolls straight off the pedestrian route toward the roadway. The visible board edge and road texture advance together; the camera does not swing, the route does not turn, and the curb is crossed only once. Keep a continuous world with believable frame-to-frame displacement.\n\nContinue from passage A's last position. The heavy cart advances while making a slow right turn into the road; rotation follows the path rather than pivoting in place. The rail is now behind camera and absent from the new view. A business van approaches in the roadway, brakes close enough to create tension, honks impatiently, then steers around the cart by changing lane and passes; it does not perform a U-turn. Keep the van's single identity, size and route consistent. No cut, teleport, duplicate cart or sudden background shift.",
+      "source": "Edited prompt · original draft unavailable",
+      "findings": "**Observed result.** The first working frame reaches an exposed roadway; the second puts an approaching van directly ahead. **Finding / revision.** A first/last-frame-only attempt weakened the sense that the camera was attached to a cart and produced mid-shot spatial jumps. The route was split into straight exit and turn. A “turning vehicle” instruction had to become a specific lane-change path so the van did not turn around in place.\n",
+      "attemptCount": 5,
+      "estimatedTries": 13
+    },
+    {
+      "id": "S8",
+      "title": "S8 — A distant protest",
+      "prompt": "素材对应（请在输入框中替换成实际素材标签）：\n@视频1：S8 Blender 走位预演；参考固定机位、构图、人物与车辆的位置及遮挡先后。\n@图片1：S8 街景；参考真实建筑、路面、天气与色调。\n@图片2：阿婆人物参考；保持面容、灰白发髻、旧花衬衫、围裙及体态一致。\n@图片3：装满压扁纸箱的旧四轮推车；保持车型、镂空底板、纸堆数量与高度一致。\n\n生成约8秒的写实电影镜头，一个连续镜头，固定全景，保留素材原始画幅。依照@视频1的空间布局和遮挡关系，将简模替换为@图片1、@图片2、@图片3中的真实街景、阿婆与推车。人物使用自然的真人表演和步态，建模中的僵硬姿态与滑行只作为位置示意。\n\n雨中的香港旧街路口，中央是圆角旧楼，左右街道通向纵深，前景湿润沥青路面与黄色网格反光。阿婆和满载纸皮的推车位于中央偏下；同一辆黑色商务车从她前方驶过，向画面右侧街道纵深离开，车尾逐渐远去。\n\n开头约0—2秒，黑色商务车在前景连续向右前方驶离，随着车身移开，原本就在后面的阿婆和整辆推车逐步显露。阿婆的位置连续可追踪，不因遮挡发生位移跳变。车辆只向前驶离，不掉头、不倒车，也不再次驶向镜头。\n\n约2—5.5秒，阿婆保持弯腰扶着车把，略微抬起下巴、侧头看向右侧远去的车尾，带着一点自嘲和不服气，用自然地道的粤语清楚喊出一次：「呠咩呠啊，我都係四個轆㗎！」声音苍老沙哑但有底气，口型与台词同步。她始终是腿脚不便的老人，腰背保持弯曲，只做小幅抬头与转头，双手仍扶着推车，不突然挺直身体，不向镜头说话。\n\n约5.5—8秒，她自然收回视线，继续低头弯腰向右缓慢推行。双脚交替迈出短而吃力的小步，脚掌落地承重后身体和推车才向前移动，肩背随用力轻微起伏。四个车轮贴地滚动，满载的湿纸皮仅随车身轻微颤动，数量、形状与堆叠方向全程一致。商务车在右侧街道继续远去。\n\n全程摄影机位置、朝向和焦距固定，背景建筑与路面纹理保持稳定；动作前后衔接，没有切镜、叠化、瞬移、突然加速或画面重建。人物、车轮、纸皮和路面接触关系可信，不穿插、不漂浮。细雨、湿路、轮子摩擦声和逐渐远去的发动机声构成环境声，阿婆的对白清晰可辨；不添加字幕、配乐或其他台词。",
+      "source": "Original draft",
+      "findings": "**Observed result.** Both figures are small against the junction and its central building. **Finding / revision.** Earlier attempts placed the grandmother and van near the lens and sent her laterally across the frame instead of toward the left street. The revision separated their depth planes and named the destination street, not just “move left.”\n",
+      "attemptCount": 2,
+      "estimatedTries": 8
+    },
+    {
+      "id": "S9",
+      "title": "S9 — Entering the recycling depot",
+      "prompt": "Fixed camera inside the dim recycling depot, looking out through the existing entrance to the wet street. The cardboard load appears in the opening first, followed by the same cart and hunched grandmother as she turns carefully inside. Keep the stack at its established height; it must not grow into a tower. The worker, initially seated near the fan and phone, notices the wheel noise, stands and makes room at the doorway. He says in natural Cantonese, “阿婆，落咁大雨都過嚟啊。推埋嚟過磅啦。” Keep the doorway, left stored pile, floor scale, fan and chair where the scene plate places them. No camera move or obstruction crossing.",
+      "source": "Edited prompt · original draft unavailable",
+      "findings": "**Observed result.** The interior view shows the worker standing to one side while the grandmother approaches through the door. **Finding / revision.** The first generated cart carried paper far higher than in previous shots. Later instructions fixed the top of the load below a clear visual height and let the entry unfold more slowly in a longer clip.\n",
+      "attemptCount": 2,
+      "estimatedTries": 10
+    },
+    {
+      "id": "S10",
+      "title": "S10 — The weight and the refusal",
+      "prompt": "【素材对应】\n@图1：S10 无人物场景图，作为唯一的空间、机位、构图和光线参考。\n@图2：阿婆人物参考，锁定年龄、面貌、灰白发髻、旧花衬衫、围裙、宽松黑裤和严重弯腰的体态。\n@图3：四轮镂空铁网手推车参考，锁定尺寸、锈蚀材质和结构。\n@图4：白色明星纸板参考，锁定白色涂层纸板材质、印刷色彩和明星脸；它已经完全对折，画面中只能看见半张脸。\n\n生成一段约 15 秒、4:3、写实电影质感的连续单镜头。严格沿用 @图1 的香港旧式废品回收站内部：阴雨天，昏暗青灰色室内，潮湿水泥地面，黑色铁铸地磅位于画面左上偏中，左侧是高高堆放的旧纸皮，右下角停着一辆已经卸空的锈蚀四轮镂空铁网手推车。相机固定在室内灯具高度，距离地面约 3.25 米，镜头光轴始终垂直向下 90°；全程不移动、不旋转、不推拉、不变焦、不切镜，不变成斜俯视。\n\n地磅上从开始到结束始终只有同一批约 25—30 张普通旧纸皮。这些纸皮已经被雨水泡软、压扁、变形，形成低矮、宽而沉的纸堆，高度不超过阿婆膝盖。画面左上角的储存纸堆与地磅上的湿纸堆是两个完全独立的物体，两者之间始终保留一条清晰可见、约 25—30 厘米宽的湿地面缝隙；任何纸板、绑带、货架、墙梁都不能碰到、穿过、覆盖或融合地磅纸堆。\n\n0—3 秒：承接上一镜。阿婆位于地磅下方靠左的位置，保持长期劳作造成的严重弯腰姿势，动作缓慢、吃力但稳定。她双手拿着最后一块稍微干燥的白色明星纸板。纸板已经完全对折成一半，尺寸与普通纸皮接近，只有印刷明星脸的一半可见。伙计从画面右上方以自然步态走向地磅。右下角的空手推车保持静止。\n\n3—6 秒：阿婆弯着腰，用真实的手部受力和身体重心转移，缓慢把这唯一一块对折的明星纸板平放到湿纸堆最上层。纸板落下后只发生轻微压实，不弹跳、不翻转、不变形为新纸箱。普通湿纸皮的数量、位置和层次保持连续，没有任何纸板凭空出现或消失。\n\n6—10 秒：伙计走到地磅右侧停下，只用鞋尖轻轻踢一下最底层湿纸皮的外缘，纸堆只产生很小的受压晃动，不散开、不升高。他低头看纸皮，对阿婆说粤语：“阿婆，濕晒啦！啲紙皮索晒水咁重，公司唔收㗎！”语气熟悉、直接，没有夸张表演。\n\n10—15 秒：阿婆仍保持脊背弯折的姿势，慢慢抬起头看一眼地磅读数，再转向伙计，以平静而有分寸的语气反驳：“以前都冇咁嘅規矩，點啊？我刚摆上去就变啦？”她只做自然的抬头、呼吸和轻微手势，不突然站直。伙计留在地磅右侧听她说话。结尾保持同一构图和同一物件位置。\n\n人物动作必须是自然真人表演：有连续的重心变化、呼吸、惯性和细小停顿，不能出现 Blender 模型般的机械关节运动。阿婆行动明显比普通成年人慢，脚步谨慎，腰始终弯曲；不要年轻化，不要敏捷快走。伙计动作克制自然。\n\n【连续性与禁止项】\n全片只有一个固定连续镜头；禁止 jump cut、隐形剪辑、闪现、瞬移、速度突变、镜头漂移、视角变化或构图重置。锁定所有物件的数量与身份：左侧储存纸堆不动；地磅上普通湿纸皮始终是同一批；明星纸板始终只有一块；空手推车始终停在右下角。禁止在阿婆身前、身后或脚边新增纸箱；禁止纸堆自动增殖、消失、换形、升高、漂浮、互相融合或穿模；禁止明星纸板恢复完整脸、变回立体纸箱、变大或变成其他材质；禁止人物与地磅、纸堆、货架和手推车穿模。无字幕、无画面文字、无水印。\n\n声音：室外持续细雨声、室内电风扇和远处街道的低环境声、湿鞋在水泥地面的轻微摩擦、纸板被放下时沉闷柔软的声音；对白清楚自然，不添加背景音乐。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The sampled overhead frame separates the printed top board, worker, grandmother, stored paper and cart. **Finding / revision.** The camera initially became a slanted overhead view; the corrected version lowered the camera while preserving a true 90° downward axis. The upper-left stored pile also needed a clear gap to stop it visually intersecting the scale pile. A softer scene plate helped avoid over-sharpened texture.\n",
+      "attemptCount": 2,
+      "estimatedTries": 9
+    },
+    {
+      "id": "S11",
+      "title": "S11 — Payment, retrieval, and departure",
+      "prompt": "素材对应（上传后按实际编号替换）：\n@图1：S11 回收站外部场景图，负责建筑、雨篷、店门、两侧纸堆、材质和阴雨电影风格。\n@图2：上一镜头的尾帧，负责阿婆与小伙的身份、衣着及道具连续性，只作全局参考，不用作本镜头首帧。\n@图3：阿婆三视图，补充发髻、脸、衣服、身材和弯腰体态。\n@图4：小伙三视图，补充人物外形；若没有这张素材，删除此引用，小伙沿用@图2。\n@图5：已经完全对折的白色明星纸板参考，只有半张印刷面孔可见。\n@视频1：S11 第一段最新版 Blender 动作预演，只参考固定机位、开场站位、物件位置及动作先后。人物必须转化为真实演员，动作重新演绎，不复制低模外形和机械运动。\n\n生成约17秒、4:3、回收站外部固定中景，完整连续一镜到底。镜头开始时已经在回收站外，正对绿色雨篷下的门口，不从上一镜俯视角转场或变形过来。摄影机全程固定，人物位于门口的中景距离，不突然靠近镜头。\n\n以@图1还原旧香港回收站外观，沿用柔和阴雨天光、低饱和青灰色、自然湿润反光和细腻胶片质感。画面清晰但没有过度锐化和HDR边缘。\n\n阿婆与小伙是@图2中的同一两个人，三视图只补充不清楚的细节，不改变他们的年龄、脸、发型和上一镜衣着，不出现额外人物。开场站位严格采用@视频1修正后的关系：阿婆在画面偏右、地磅后方更靠店内；小伙在画面偏左、稍靠门口。两人自然面对彼此。空的四轮镂空铁网推车停在门外原位。地磅上是上一镜留下的那批普通湿纸皮，最上层只有一块白色涂层的明星纸板，已经完全对折，只露半张印刷脸。\n\n开场至约5秒：小伙轻轻叹气，松一下肩，朝阿婆随意摆手，以敷衍、带一点施舍意味的语气说粤语：“算啦算啦！見你大熱天時落住雨推過嚟，當半價收啦！”他在原站位拿出几张皱巴巴的零钱，向阿婆递过去。手势克制，不大幅挥舞，不走向画面左边。\n\n约5—8秒：阿婆仍弯着腰，低声回一句：“咁孤寒。”她用被雨水泡得发白、粗糙的手指接钱，慢慢把零钱叠齐，一只手拨开衣襟，另一只手把零钱仔细塞进贴身防雨内袋。钱先由小伙持有，再被阿婆接住，最后随着手进入内袋；交接过程连续可见。\n\n约8—12秒：阿婆收好钱，目光转回地磅，伸手抓住最上层那块对折的白色明星纸板，沿纸面抽出，再抬离纸堆。只取这一块。下面那批湿纸皮留在地磅，层数和高度保持一致，不跟着移动，也不凭空长出新纸板。\n\n约12—17秒：阿婆拿着纸板，保持弯腰姿态，用短而慢的小步走到门外推车旁。她开始经过小伙身边时，小伙才很随意地把重心挪到后脚，略微侧肩，向自己斜后方让出一小半步，约30—40厘米，给她留出通道。让位是对她靠近的即时反应，不是独立的走位表演。阿婆经过后，他收回手，就地站住，目光短暂跟着她和纸板；不继续向画面左侧走，不跟随，不横穿门口，不绕着阿婆走。\n\n阿婆走到推车旁，平静又有一点倔强地说粤语：“呢個冇濕透，唔賣畀你喇。”边说边把取回的同一块纸板平放到镂空车板上，然后松手。台词完整说完，纸板已经放稳，停留半秒收尾。此段结束时推车仍停在原处。小伙不说下一句，阿婆不开始掉头或推车离开；这些动作留给下一段。\n\n阿婆始终驼背弯腰，行动不便，动作缓慢但有生活经验。伸手、叠钱、收钱、抽纸板、走向车和放下纸板之间自然衔接，有呼吸、迟疑、重心转移和轻微惯性。取纸板这一下可以熟练明确，但不做年轻人式敏捷动作。小伙的站姿松弛，有轻微呼吸和眼神变化，整体以留在原地为主。两人说话对象明确，口型与对应粤语对白匹配，不串台，不重叠说话。\n\n全程只有同一位阿婆、同一位小伙、同一辆推车、同一批湿纸皮和唯一一块对折明星纸板。纸板从地磅经过阿婆手中再落到车上，轨迹连续可追踪；白色涂层材质和半张脸保持不变。固定场景不变化，左侧储存纸堆与地磅纸堆保持清楚间距。手脚不穿过物件。禁止jump cut、瞬移、人物滑行、变脸、换衣、物件增殖、纸板瞬间转移、机械动作和镜头漂移。\n\n只保留雨声、店内风扇、轻微纸钞与纸皮摩擦、鞋底脚步以及上述三句自然粤语对白。不加字幕、水印或背景音乐。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The available combined export shows the exterior depot with the figures small inside the opening. **Finding / revision.** This was the most iterative shot. A detailed description of receiving banknotes triggered unwanted crops and zooms; splitting the scene into A/B/C and making B a broad gesture helped protect the wide camera. The cart was first confused with the wet paper in front, its handle side was corrected, and the exit route changed to screen left. The assembled clip needed further seam alignment and quality matching.\n",
+      "attemptCount": 7,
+      "estimatedTries": 15
+    },
+    {
+      "id": "S12",
+      "title": "S12 — The nearly empty cart looks backward",
+      "prompt": "生成约8秒、4:3画幅、写实电影质感的连续镜头，承接回收站离开后的雨中行进。\n\n【素材分工】\n@图片1：本镜头街景，参考两侧密集旧楼、低机位仰视的街道空间、冷灰绿色调和阴雨光线。加入人物与推车后，以动作视频的车载机位为准。\n@图片2：阿婆人物参考，保持同一位灰白发髻、旧花衬衣、围裙、宽松裤子、旧鞋的阿婆，保留长期弯腰的体态。\n@图片3：镂空金属四轮推车参考，只采用推车结构，不复制参考图上的整堆货物。\n@图片4：白色明星包装纸箱参考，只有一块已压扁、完全对折的包装纸板，印刷面只有折后露出的部分。\n@视频1：Blender S12动作预演，只参考相机安装位置、向后仰视方向、人物与车的相对位置、前行路线和颠簸节奏。将简模转化为真实人物和真实街景，不复制低模外观与机械步态。\n\n【唯一机位】\n相机刚性固定在推车底板靠近把手一端，镜头离地约30厘米，沿车身向后、朝正在推车的阿婆看，光轴相对水平面向上约60度，取景范围严格参考预演。它是随推车一起前行的固定车载镜头，不是固定在路边的摄影机。\n构图与@视频1一致：画面下部主要看见阿婆弯腰身体的下半部、围裙下摆和交替迈动的双腿，两侧是向上延伸的旧楼，中间是阴雨天空。车框或折叠纸板边缘仅在底部近处自然露出，不为辨认图案调整镜头。阿婆头部是否入画遵循预演，不主动仰拍成面部特写。\n\n【连续前进与空车颠簸】\n开场已经在行进中，阿婆用短而吃力的步子持续向前推车。始终保持驼背，不挺直身体、不突然加速、不停下来表演。步伐带有真实的重心转移、落脚和身体细微起伏，速度符合行动不便的老人。\n推车上的普通湿纸皮已经卖掉。镂空底板上只有同一块白色、对折过的明星纸板，薄薄一层；没有厚纸堆、纸箱堆或其他新增货物。\n失去重物压舱后，轻车在粗糙湿柏油路上持续发颤。车轮经过路面接缝时，车身产生几次明显、短促的不规则上下冲击，伴随轻微左右侧摆，随后回落。相机和车框一起受力抖动，人物与远处建筑随之在画面中颠动；相机不脱离车体独立漂移。纸板随底板轻颤，位置基本稳定，不飞走、不复制、不恢复成完整立体纸箱。\n阿婆和推车保持相近的相对距离。因为镜头朝后看，两侧建筑随着前进产生真实后视透视变化，近处立面逐渐退向后方消失点，不把阿婆做成倒着走，也不让整座城市像一张背景图横向平移。\n\n【质感与声音】\n小雨持续落下，路面湿润，旧楼、排水管和窗户保持稳定结构。冷灰绿色、阴天散射光、自然暗部，真实旧城区电影质感。颠簸瞬间有短暂自然运动模糊，间隙仍能辨认人物与环境，不让整段持续涂抹模糊。\n突出空铁车的哐当声、轮子经过接缝的冲击声、细雨和老人脚步声。整段无对白、无旁白、无字幕、无配乐。\n\n全程一个连续车载镜头，焦距、安装点与基础仰角固定。无切镜、变焦、重新裁切、环绕、俯视或切回侧面。颠簸强烈但短促，不做反复慢动作、周期性上下漂浮或夸张翻车。只表现阿婆推着几乎空的车继续前行。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The sampled low view shows the handle, both hands, feet and surrounding buildings. **Finding / revision.** The shot reused the idea of a cargo POV but changed the load and camera orientation after the depot. The major risk was breaking the physical link between cart, handle, person and camera; Blender attachment and a visible handle supplied that link. A later test added a very faint misty-rain layer.\n",
+      "attemptCount": 2,
+      "estimatedTries": 10
+    },
+    {
+      "id": "S13",
+      "title": "S13 — The return and the shopkeeper's call",
+      "prompt": "生成约14秒、4:3画幅、写实电影质感的连续固定远景。机位沿用镜头3，画面右侧高、左侧低的15度坡路，建筑竖直。\n\n@图片1使用新版S13阴天收摊坡道场景图（13-S13-15度坡道-阴天收摊-v03.png），决定店面、红色帆布雨篷、关闭的相邻卷闸、已经收空的水果架、清理干净的人行道、栏杆和垃圾桶的位置，严格保留完整构图和自然电影质感。沿用此前镜头阴天白昼的自然亮度和灰绿色调，小雨持续，水果店内部灯光亮着；仅门店进入收摊状态，不转成黄昏或夜景，不压暗画面，不添加橙色路灯光晕。\n@图片2确定阿婆身份、服装和长期弯腰的体态。@图片3确定水果店老板身份。@图片4只参考镂空四轮推车结构，不采用其中的满车货物。车上只有此前取回的同一块白色对折明星纸板，远景无需看清图案。\n@视频1采用S13 v02 Blender动作视频，只参考人物、推车与栏杆的前后关系、动作路线和时序，将简模动作转化为真人自然动作。\n\n【开场即成立的位置】\n老板已经在水果店外、栏杆内侧的人行道上扫地，清扫的就是水果店左侧原先堆纸皮、现在已清空的区域。开场不从店里走出来，不临时出现扫帚。\n阿婆从画面右侧返回，朝画面左侧前进。她和推车都在栏杆外侧、靠摄影机和马路的一边，栏杆在他们身后。两者全程保持在这一侧，不穿越栏杆。\n\n【阿婆在车后推车】\n推车位于阿婆的画面左侧，阿婆位于推车的画面右侧、车把后方；车头朝左，车把靠右。她面朝左侧，双手扶住车把，从后面推动车子向左滚动。不是走在车前面拉车，不是倒退行走。\n阿婆持续弯腰，以短而缓慢的小步返回水果店，保持真实落脚与身体重心变化。车上只有一层对折纸板，没有厚纸堆，不新增任何货物。\n\n【老板先扫地，再看见她并喊住】\n开头约两秒，老板随意扫着已清空的地面。随后注意到从右侧回来的阿婆，停下扫帚，转头朝她热络地喊：\n“阿婆！行得咁快啊，交完貨喇？”\n阿婆听见后自然放慢，推车来到水果店前，在栏杆外停住等候，仍保持弯腰，双手留在车把附近。阿婆本镜头不说话。\n老板拿着扫帚留在原处，接着朝她说：\n“……喂你等我一陣。”\n说完，老板转身，沿栏杆内侧的人行道走回水果店入口，经门口台阶进入店内。不要穿过水果架、墙面或栏杆。阿婆与空车留在栏杆外等待，不跟着进店。\n\n固定远景中动作大致可辨即可。全片摄影机不移动、不变焦、不裁切、不为台词切近景。红色雨篷、店面、栏杆和前景道路的屏幕位置与大小稳定。地面已清空，不重新长出纸堆或周转筐，水果架不重新生成水果。\n声音是小雨、脚步、空车轮声、开始时的扫地声，以及老板上述两句粤语对白。无阿婆对白、无字幕、无旁白、无配乐。保持自然生活节奏，不夸张表演。",
+      "source": "Original draft",
+      "findings": "**Observed result.** `S13.mp4` is a wide return through the junction; `S13-2.mp4` shows the owner and grandmother at the fruit shop. **Finding / revision.** The original return sometimes put her ahead of the cart, stopped her too abruptly, or made the owner shout as soon as she appeared. The revised route placed her behind the cart and outside the rail, gave the owner an initial sweeping beat, and let her slow before stopping. A later variant added very faint misty rain to `S13.mp4`: weather test.\n",
+      "attemptCount": 2,
+      "estimatedTries": 8
+    },
+    {
+      "id": "S14",
+      "title": "S14 — The folded board and the fruit gift",
+      "prompt": "S14｜完整15秒｜纸板遮雨与送水果\n\n素材引用：\n【图片1】S13实际尾帧，直接设为首帧。\n【图片2】阿婆人物三视图，只用于身份、衣着和弯腰体态。\n【图片3】水果店老板人物参考，只用于身份与衣着，不用回收站伙计。\n【图片4】保留下来的白色明星纸箱，只参考材质、印刷和旧折痕。\n【视频1】S14-complete-15s.mp4，只参考动作顺序、空间关系和走位。人物外观、场景和构图以图片1为准。将简模动作变成自然真人表演。\n上传后请用对应素材标签替换以上占位引用。\n\n生成完整15秒、4:3画幅、写实电影质感的连续固定远景，从【图片1】直接接续。摄影机固定在街道对面，整个画面的边界、景别、焦距、红色雨篷、坡道、店铺、栏杆和垃圾桶始终不变。保留上一镜阴雨天的灰绿色自然光，不变暗。所有表演在原远景中完成，不需要看清手指、印刷细节或袋口，不变焦、不裁切、不跟拍、不切特写。\n\n推车全程停在首帧原位，位置与朝向完全固定，车轮不滚动。阿婆不推、不拉、不挪车。她与推车在栏杆外，老板在栏杆内。阿婆维持年迈弯腰的体态，用连贯、熟练但不急促的动作取板遮雨。用同时发生的动作和对白完成本镜头，不靠加速、跳帧或省略中间过程。\n\n0—约7秒：\n阿婆从车底板取起唯一那块折过的明星纸箱，先离开身体和车架，再顺着旧折痕摊开，发出一次“哗”的纸板声，随后举到头顶扶住遮雨。原来的折叠纸板连续展开成同一张纸板，不变成两张，不互相穿插，不穿过头、发髻、手臂或栏杆。车底板随之空出来。\n同时，老板提着一袋水果从店内走出来，边走近栏杆内侧边热络地对阿婆说粤语：“多謝你頭先清走晒啲紙皮啊！如果唔係落雨淋爛晒喺門口。呢啲攞去食啦！”\n老板开始说话时阿婆可以仍在取板、展开，不必等遮雨动作完成才开始对白。语气亲切自然，略紧凑，句间不留长空拍。\n\n约7—8秒：\n阿婆一只手继续扶着头顶的纸板，另一只手轻轻推辞，连忙说：“哎呀，唔使啦唔使啦。”推车保持静止。\n\n约8—12.5秒：\n老板诚恳地接话：“攞住啦！冇咩所謂嘅，大家都係搵食啫，互相照應啦！”\n说话同时，把手中的水果袋先提过栏杆上沿，绕开阿婆头顶的纸板，再放低挂在推车靠店侧的把手上。袋子连续从手中移到车把，挂牢后老板自然收手，不穿栏杆、不穿纸板，也不拖动车子。只需表现顺手挂袋的大致动作。\n\n约12.5—15秒：\n老板完成挂袋、收手时自然补充：“下次再嚟我度攞『生意』啦！”阿婆有些不好意思地接受，仍举着纸板遮雨，留在原处。水果袋挂在车把上轻晃，推车与车轮不动。结尾不再安排走动或额外对白。\n\n台词按老板、阿婆、老板、老板的顺序说，不互相重叠，保留自然粤语口气。以上时间用于安排节奏，动作和对白可以并行，句间不加入长停顿。\n全片同一块纸板、同一辆车、同一袋水果，不新增纸堆，不让物件瞬移或复制。纸板展开后保持连续的纸张结构和旧折痕，扶在头顶上方，与人体留出合理空间。人物有自然呼吸和重心变化，不复制简模的机械感。\n声音只有雨声、脚步、纸板声、塑料袋声及上述对白。无字幕、旁白、背景音乐。整个15秒保持首帧完整远景，禁止为动作或对白放大画面。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The later sampled frames show the grandmother under the opened board and the owner reaching the bag toward the handle. **Finding / revision.** A single new generation changed composition, brightness and rain intensity across the S13/S14 join. A combined two-video generation reduced some disjunctions but could still carry unwanted rain from the source. The production subsequently tested direct rain reduction in S14. This is a concrete example of a limit of negative prompts: asking for “no rain” does not necessarily remove rain already baked into video references.\n",
+      "attemptCount": 1,
+      "estimatedTries": 7
+    },
+    {
+      "id": "S15",
+      "title": "S15 — A view from directly above",
+      "prompt": "Lock the camera perfectly vertical above the fruit-shop awning and adjacent road. The weathered red canvas awning hides most of the owner. The grandmother is mostly obscured by the printed board she holds overhead; the cart, its mesh platform, and the fruit bag remain more visible. After her brief Cantonese acknowledgement, “嗯，好啊,” she moves slowly toward the bottom of frame, taking the cart with her. Maintain the screen positions of awning, railing and curb. No tilt, dolly, close-up, duplicate person or newly loaded paper.",
+      "source": "Edited prompt · original draft unavailable",
+      "findings": "**Observed result.** The top-view frame reads as a simple graphic: red awning at left, walkway and railing, then cart and printed board. **Finding / revision.** The board and awning both conceal people, so visibility had to be planned from directly above. The departing route was specified as down-frame instead of a vague “walk away.”\n",
+      "attemptCount": 1,
+      "estimatedTries": 6
+    },
+    {
+      "id": "S16",
+      "title": "S16 — Leaving with the fruit",
+      "prompt": "S16｜重新制作｜仅三张参考图｜15秒｜4:3\n\n上传对应：\n@图片1：原来的香港路口场景图。\n@图片2：wide-0001.png，全景白模比例图。\n@图片3：pose-reference.png，人物推车姿势说明图。\n不上传S2、旧成片或之前带街景和车辆的建模视频。本次白模视频仅用于检查走位，不加入这组三图输入。\n\n【参考分工】\n@图片1决定最终画面的环境、建筑、街道透视、完整取景、曝光和色调。画面从第一秒到最后一秒都采用这一固定外景构图。\n@图片2只规定阿婆和推车在完整画面中的大小、开场位置与朝向。阿婆连同头顶纸板的投影高度约为画面高度的十分之一，鞋底位于画面从上往下约72%的道路位置。\n@图片3只说明同一个人物的姿势和道具关系：弯腰、左手扶头顶纸板、右手推车、水果袋挂在自身左侧的把手。它是姿势说明，不是第二个人物，不决定镜头远近或构图。\n两张白模图只提供空间和动作信息。最终所有人物与道具均呈现为真实实物，灰色空背景、白模材质和工作室灯光不进入成片。\n\n【画面与动作】\n生成15秒、4:3画幅、连续固定全景，香港阴天街头的写实电影质感。\n街道和建筑占据主要画面，一位瘦小年迈的阿婆和唯一一辆旧四轮铁推车位于中景。人物的画面大小依照@图片2，全程保持同一纵深。摄影机固定，不变焦、不推近、不跟随、不裁切，也不切换到@图片3的近距离构图。\n\n开场阿婆已在画面右侧缓慢行走。她沿着与画面下边缘平行的路线，持续从右向左推车。15秒内从右侧移动至中间偏左的位置即可，不要求走出画面，不突然加速。\n推车在前、位于她的画面左侧，阿婆在车后。她保持自然驼背，短步慢行，双脚交替落地，身体有轻微重心变化。推车车轮连续滚动，人与车保持相同前进速度。\n\n阿婆灰白头发挽成低发髻，穿褪色深色碎花衬衣、磨旧围裙、宽松深色裤子和旧洞洞鞋。左手扶住头顶已展开的白色印刷明星纸板，纸板保留折痕，作为临时雨棚；右手握车把推车。\n一袋水果固定挂在阿婆自身左侧的把手端部，与扶纸板的左手同侧，袋子自然下垂、轻微晃动。铁推车底板为镂空网格，车上没有纸堆。只有这一块纸板和这一袋水果，途中不增加物品，不换手，不重新整理道具。\n\n【融入场景】\n将阿婆、推车、纸板与水果袋作为@图片1街道中真实存在的物体来拍摄。它们接受与街景相同的阴天漫射光，采用一致的低饱和灰绿冷调、曝光、黑位和胶片颗粒。\n皮肤和衣服颜色克制，推车为暗哑旧铁，纸板是略旧的灰白色。人物和道具的清晰度匹配同一距离的街景，不比背景格外锐利或明亮。脚底、车轮有柔和接触阴影和自然的湿地反光，没有贴图边缘、彩色轮廓或悬浮感。\n本段只有阿婆推车行走，不安排行驶的车辆或其他人物经过。雨极轻，几乎看不到雨线，路面保持柔和潮湿。\n\n【开场声音】\n从0秒开始，阿婆的粤语画外音自然响起：\n“唔該晒你啊，我行先喇！”\n她说完后，约3秒起，老板在画外热络回应：\n“多謝你先真！”\n两句依次说完，不重叠。阿婆画面内继续自然行走，不对口型、不停步、不回头；老板始终在画外。后续只有轻微脚步、旧推车滚动与街道底噪，没有新增对白。\n\n一个完整镜头，一位真人阿婆，一辆推车。没有简模残留、叠加人偶、人物复制、道具增殖或瞬移。无字幕、水印、配乐或额外旁白。",
+      "source": "Original draft",
+      "findings": "**Observed result.** The intersection export shows her and the cart crossing the wide street; the road and tall buildings retain most of the frame. **Finding / revision.** Earlier generations made the person and cart too large and too different in colour from the background, or failed to keep a hand on the handle. The final prompt separated hand roles, projected figure scale, and colour matching. The three-image setup used scene, wide-scale blocking, and pose references; the Blender white-model video was used to inspect movement, not necessarily uploaded in that final setup.\n",
+      "attemptCount": 1,
+      "estimatedTries": 7
+    }
+  ],
+  "counts": {
+    "midjourney": 174,
+    "generation": 91,
+    "edit": 59,
+    "variation": 24,
+    "video": 44,
+    "unassignedVideo": 8
+  }
+}

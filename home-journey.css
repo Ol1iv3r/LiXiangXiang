@@ -1,0 +1,213 @@
+/* Both opening scenes share a scroll stage; each keeps its own photograph. */
+.home-journey { position:relative; height:240svh; overflow-anchor:none; }
+.journey-stage { position:sticky; top:0; height:100svh; min-height:420px; overflow:hidden; isolation:isolate; }
+.journey-cover-layer { position:absolute; inset:0; z-index:2; }
+.journey-cover-layer[inert],.identity-stage[inert] { pointer-events:none; }
+.identity-stage { position:absolute; inset:0; z-index:3; opacity:0; overflow:hidden; color:#fff6e6; font-family:Inter,Arial,sans-serif; }
+/* Both planes use exactly the same crop. The cutout starts 751px into Asset 10. */
+.identity-photo-plane { position:absolute; left:50%; top:0; width:max(100%,150.3293svh); aspect-ratio:3196 / 2126; transform:translateX(-50%); pointer-events:none; }
+.identity-background { z-index:0; }
+.about-background { display:block; width:100%; height:100%; }
+.identity-foreground { z-index:3; }
+.is-revealed .identity-foreground { animation:foreground-settle .45s 2s both; }
+.person-cutout { position:absolute; top:0; left:23.4981%; width:47.9975%; height:100%; }
+.identity-shade { position:absolute; inset:0; z-index:4; background:#000; opacity:0; pointer-events:none; transition:opacity .65s cubic-bezier(.2,.7,.2,1); }
+.identity-stage.has-expanded-branch .identity-shade { opacity:.73; }
+.identity-home { position:absolute; z-index:5; bottom:3.8%; left:2.8%; padding:5px; transition:opacity .6s; }
+.identity-home .signature-art { width:3.8vw; }
+.has-expanded-branch .identity-home { opacity:.36; }
+.identity-home:hover { opacity:1; }
+.identity-stage a:focus-visible,.identity-stage button:focus-visible { outline:1px solid #fff6e6; outline-offset:7px; }
+.role-branch { position:absolute; z-index:2; transform-origin:0 0; --presence:0; --unfold:0; }
+.branch-me { left:59.7%; top:8.5%; }
+.branch-director { left:19.8%; top:28.5%; }
+.branch-social { left:4.5%; top:63%; }
+.branch-photography { left:69.7%; top:43.7%; }
+.branch-digital { left:65.8%; top:77.2%; }
+.branch-trigger { position:relative; display:block; padding:0; text-align:left; color:inherit; font:400 clamp(14px,1.8vw,30px)/1.2 ForestTrail,cursive; white-space:nowrap; opacity:var(--presence); }
+.branch-me .branch-trigger { font-size:clamp(54px,7.8vw,126px); line-height:1; }
+.branch-float { display:block; animation:leaf-drift 9s ease-in-out infinite; animation-play-state:paused; }
+.branch-social .branch-float { animation-duration:11s; animation-delay:-3s; }
+.branch-photography .branch-float { animation-duration:10.2s; animation-delay:-5s; }
+.branch-digital .branch-float { animation-duration:12s; animation-delay:-1s; }
+.branch-me .branch-float { animation-name:me-float; animation-duration:8s; }
+.is-revealed .branch-float { animation-play-state:running; }
+.role-branch.is-open { z-index:6; }
+.is-open .branch-float,.branch-trigger:hover .branch-float,.is-offscreen .branch-float { animation-play-state:paused; }
+.branch-panel { position:absolute; opacity:var(--unfold); visibility:hidden; pointer-events:none; transform:translateY(calc((1 - var(--unfold)) * 12px)); transition:visibility 0s .5s; font:550 italic clamp(10px,1.25vw,18px)/1.22 Inter,Arial,sans-serif; }
+.is-open .branch-panel { visibility:visible; pointer-events:auto; transition:visibility 0s; }
+.branch-photos { display:grid; gap:1.2vw; }
+.branch-photos figure { margin:0; min-width:0; overflow:hidden; background:#77786d; }
+.branch-photos img { display:block; width:100%; height:100%; object-fit:cover; }
+.branch-copy p { margin:0; line-height:1.22; }
+.branch-copy p + p { margin-top:1.8vw; }
+.branch-cta { display:block; width:fit-content; position:relative; z-index:2; padding:8px 0; font:inherit; }
+.branch-cta:hover { text-decoration:underline; text-underline-offset:4px; }
+.work-cta { color:#ebff70; }
+.branch-close { display:none; }
+.branch-me .branch-panel { left:-9.5vw; top:calc(100% + 2vw); width:41vw; text-align:center; }
+.branch-me .branch-photos { grid-template-columns:1fr 1fr; gap:0; height:39svh; }
+.branch-me .branch-copy { margin-top:2vw; }
+.branch-director .branch-panel { left:0; top:calc(100% + 10px); width:48vw; }
+.branch-director .branch-photos { grid-template-columns:1fr 1fr; height:48svh; }
+.branch-director .branch-copy { margin-top:1.2vw; width:52%; }
+.branch-director .branch-cta { position:absolute; right:1%; top:100%; margin-top:-2.9em; }
+.branch-social .branch-panel { left:0; top:calc(100% + 4px); width:45vw; }
+.branch-social .branch-photos { grid-template-columns:repeat(3,1fr); height:28svh; }
+.branch-social .branch-copy { text-align:right; margin-top:1vw; }
+.branch-photography .branch-panel { left:-50vw; top:-10svh; width:46vw; }
+.branch-photography .branch-photos { grid-template-columns:repeat(6,1fr); grid-template-rows:repeat(3,1fr); height:47svh; gap:.65vw; }
+.branch-photography figure:nth-child(3),.branch-photography figure:nth-child(4),.branch-photography figure:nth-child(6),.branch-photography figure:nth-child(10),.branch-photography figure:nth-child(13) { grid-column:span 2; }
+.branch-photography .branch-cta { margin-left:auto; }
+.branch-digital .branch-panel { left:-1vw; top:-49svh; width:31vw; }
+.branch-digital .branch-photos { grid-template-columns:1fr 1fr; height:31svh; gap:.8vw; }
+.branch-digital .branch-copy { min-height:9svh; font-size:clamp(9px,1.02vw,15px); margin-bottom:1.2vw; }
+.branch-digital .branch-copy p+p { margin-top:1.2vw; }
+.home-work { position:relative; background:var(--bg); color:var(--ink); }
+.home-work .page-heading h2 { font-size:clamp(46px,5vw,76px); line-height:1.2; margin:25px 0; font-weight:400; }
+@keyframes leaf-drift { 0%,100% { transform:translate(0,0) rotate(0); } 35% { transform:translate(5px,-6px) rotate(.25deg); } 70% { transform:translate(-4px,3px) rotate(-.2deg); } }
+@keyframes me-float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-3px); } }
+@keyframes foreground-settle { from { opacity:1; } to { opacity:0; } }
+@media (max-width:700px) {
+  .journey-stage { min-height:480px; }
+  .identity-photo-plane { left:46%; }
+  .identity-home { left:5%; bottom:4%; }
+  .identity-home .signature-art { width:34px; }
+  .branch-me { left:66%; top:9%; }
+  .branch-director { left:6%; top:28%; }
+  .branch-social { left:5%; top:62%; }
+  .branch-photography { left:59%; top:44%; }
+  .branch-digital { left:45%; top:79%; }
+  .branch-trigger { white-space:normal; font-size:clamp(13px,2.9vw,20px); max-width:49vw; }
+  .branch-me .branch-trigger { font-size:58px; }
+  .branch-photography .branch-trigger { max-width:38vw; }
+  .role-branch.is-open .branch-trigger { max-width:86vw; }
+  .branch-panel { font-size:12px; }
+  .branch-close { display:block; position:absolute; right:0; top:-36px; width:28px; height:28px; font:24px/1 Inter,sans-serif; }
+  .branch-me .branch-panel,.branch-director .branch-panel,.branch-social .branch-panel,.branch-photography .branch-panel,.branch-digital .branch-panel { left:0; top:calc(100% + 20px); bottom:auto; width:86vw; }
+  .branch-me .branch-photos,.branch-director .branch-photos { height:36svh; max-height:none; }
+  .branch-social .branch-photos { height:29svh; max-height:none; }
+  .branch-photography .branch-photos { height:36svh; max-height:none; }
+  .branch-digital .branch-photos { height:29svh; max-height:none; }
+  .branch-digital .branch-copy { min-height:9svh; font-size:11px; margin-bottom:15px; }
+  .branch-me .branch-copy,.branch-social .branch-copy,.branch-director .branch-copy { margin-top:16px; }
+  .branch-copy p+p { margin-top:16px; }
+  .branch-director .branch-copy { width:100%; }
+  .branch-director .branch-cta { position:static; margin:12px 0 0; }
+  .home-work .page-heading h2 { font-size:46px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .branch-panel { transform:none; }
+  .identity-foreground { opacity:0; }
+}
+
+/* A decorative cursor invites the first interaction, without intercepting it. */
+.hover-guide { position:absolute; left:75%; top:calc(100% - 12px); z-index:7; width:max-content; display:flex; flex-direction:column; align-items:flex-start; gap:5px; color:#fff6e6; pointer-events:none; opacity:0; visibility:hidden; transition:opacity .3s,visibility 0s .3s; }
+.hover-guide svg { width:25px; height:31px; overflow:visible; filter:drop-shadow(0 2px 5px #0007); }
+.identity-stage.is-revealed:not(.has-explored) .hover-guide { opacity:1; visibility:visible; transition-delay:1.3s,0s; }
+.identity-stage.is-revealed:not(.has-explored) .hover-guide svg { animation:guide-approach 2.8s 1.3s ease-in-out infinite; }
+@keyframes guide-approach { 0%,100% { transform:translate(9px,12px); opacity:.5; } 45%,65% { transform:translate(0,0); opacity:1; } }
+@media (max-width:700px) { .hover-guide { left:auto; right:0; } }
+
+/* A quiet onward cue, below the floating practices. */
+.identity-work-link{position:absolute;z-index:5;left:50%;bottom:3%;display:flex;flex-direction:column;align-items:center;gap:5px;transform:translate(-50%,12px);opacity:0;pointer-events:none;font:300 clamp(10px,.95vw,14px)/1.5 Inter,Arial,sans-serif;letter-spacing:.025em;white-space:nowrap;transition:opacity .6s,transform .9s cubic-bezier(.16,1,.3,1)}
+.identity-work-link svg{width:18px;height:22px;animation:identity-work-drift 3.2s ease-in-out infinite}
+.is-revealed .identity-work-link{opacity:.85;transform:translate(-50%,0);pointer-events:auto;transition-delay:.5s}
+.has-expanded-branch .identity-work-link{opacity:.35;transition-delay:0s}.identity-work-link:hover{opacity:1}
+@keyframes identity-work-drift{0%,100%{transform:translateY(-2px)}50%{transform:translateY(3px)}}
+.branch-photography .curated-photographs{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));height:auto;aspect-ratio:2;gap:.6vw}
+.branch-photography .curated-photographs figure{grid-column:auto;background:transparent}
+.curated-photographs button{display:block;width:100%;height:100%;padding:0;overflow:hidden;cursor:zoom-in}
+.curated-photographs img{transition:transform .65s cubic-bezier(.2,.8,.2,1);filter:none}.curated-photographs button:hover img{transform:scale(1.035)}
+.photo-grid img{aspect-ratio:1.5;filter:none}
+@media(max-width:700px){.identity-work-link{bottom:3%;font-size:11px}.branch-photography .curated-photographs{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));aspect-ratio:1.125;height:auto;gap:6px}}
+@media(prefers-reduced-motion:reduce){.identity-work-link,.curated-photographs img{transition:none}.identity-work-link svg{animation:none}}
+/* The cutout provides a continuous scroll cue and lands on the About portrait. */
+.home-journey{height:225svh;background:#050605}.journey-stage{background:#050605}.journey-cover-layer{will-change:opacity,transform;transform-origin:center}.identity-stage{will-change:opacity}.journey-person-plane{z-index:4;opacity:0;transform-origin:50% 75%;will-change:transform,opacity;pointer-events:none}.journey-person-plane img{filter:none}.home-work{background:#050605}
+@media(prefers-reduced-motion:reduce){.journey-person-plane{display:none}}
+.identity-photo-plane{transform-origin:50% 75%}
+
+.home-journey{height:200svh}.identity-work-link{color:#080a09;text-shadow:none}
+/* A quiet dissolve with a complete landing on either opening scene. */
+.journey-person-plane{display:none}
+.branch-trigger{font-size:clamp(12px,1.4vw,24px)}
+.branch-me .branch-trigger{font-size:clamp(46px,6.3vw,99px)}
+@media(max-width:700px){.branch-trigger{font-size:clamp(12px,2.5vw,17px)}.branch-me .branch-trigger{font-size:48px}}
+
+.home-work .film-cover-art>img{transition:transform 1.7s cubic-bezier(.2,.82,.18,1);will-change:opacity}
+.home-work .film-cover-art>.film-dissolve-underlay{opacity:1;transform:none;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.film-dissolve-underlay{display:none}}
+/* Real photographs and project previews on the About branches. */
+.branch-photos :is(a,button){position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:transparent;pointer-events:auto;color:inherit;cursor:pointer;text-decoration:none}
+.branch-me .branch-photos{grid-template-columns:repeat(4,minmax(0,1fr));height:35svh;gap:.5vw}
+.branch-me .branch-panel{left:-16vw;width:50vw}
+.branch-me .branch-photos img{object-position:50% 55%}
+.branch-director .branch-photos{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,1fr);height:auto;aspect-ratio:2.6;gap:.55vw}
+.branch-director .branch-panel{width:55vw}
+.branch-director .branch-photos figure{background:#111}
+.branch-director .branch-photos img{object-fit:contain}
+.social-projects,.digital-projects{align-items:stretch}
+.branch-photos :is(a,button)>span{position:absolute;bottom:0;left:0;right:0;padding:22px 9px 8px;background:linear-gradient(transparent,#000c);color:#fff;font:400 11px/1.3 Inter,sans-serif;text-align:left}
+.branch-social .branch-photos img{object-fit:contain;background:#e6e2d8}
+.branch-social .social-projects>a img{object-fit:cover}
+.branch-digital .branch-panel{left:-12vw;width:43vw;top:-46svh}
+.branch-digital .branch-photos img{object-fit:contain;background:#0b0e0c}
+.branch-digital .branch-photos{height:26svh;grid-template-columns:1fr 1.4fr}
+@media(max-width:700px){.branch-me .branch-panel,.branch-director .branch-panel,.branch-digital .branch-panel{left:0;top:calc(100% + 20px);width:86vw}.branch-me .branch-photos{height:31svh;gap:4px}.branch-director .branch-photos{height:auto;aspect-ratio:2.3}.branch-digital .branch-photos{height:25svh}.branch-photos :is(a,button)>span{font-size:9px}}
+.branch-panel{transform:translateY(calc((1 - var(--unfold)) * 12px)) scale(calc(.82 + var(--unfold) * .18));transform-origin:top center}
+.branch-photos :is(a,button){min-width:0;min-height:0;overflow:hidden}
+.branch-social .branch-photos,.branch-digital .branch-photos{grid-template-rows:minmax(0,1fr)}
+.branch-social .branch-photos img,.branch-digital .branch-photos img{display:block;width:100%;height:100%}
+
+/* The four practice labels use Chalkduster; Me keeps Forest Trail. */
+.role-branch:not(.branch-me) .branch-trigger{font-family:Chalkduster,cursive;font-weight:400}
+/* Let each GIF define its height instead of letterboxing it in a fixed row. */
+.branch-digital .branch-photos{height:auto;grid-template-columns:1.278fr 1.776fr;align-items:start}
+.branch-digital .branch-photos>a{aspect-ratio:690/540}
+.branch-digital .branch-photos>button{aspect-ratio:1000/563}
+.branch-digital .branch-photos img{object-fit:cover;background:transparent}
+.branch-social .branch-photos img{object-fit:cover;background:transparent}
+/* Hide the narrow printed frame within the cover thumbnails. */
+.branch-social .social-projects>button img{transform:scale(1.055)}
+
+/* Touch layouts keep the expanded branch inside the viewport, without a close dot. */
+.branch-close{display:none!important}
+@media(max-width:1100px),(max-height:600px){
+  .journey-stage{height:100svh;min-height:0}
+  .branch-trigger{min-height:44px;display:flex;align-items:center;font-size:clamp(13px,1.8vw,20px);white-space:normal;max-width:34vw}
+  .branch-digital{left:57%;top:77%}
+  .branch-photography{left:59%;top:44%}
+  .branch-me .branch-trigger{font-size:clamp(48px,7vw,78px)}
+  .role-branch.is-open .branch-trigger{max-width:88vw}
+  .identity-stage.has-expanded-branch .role-branch:not(.is-open){visibility:hidden;pointer-events:none}
+  .identity-stage.has-expanded-branch .identity-work-link{visibility:hidden;pointer-events:none}
+  .identity-stage .role-branch .branch-panel{left:0;top:calc(100% + 12px);bottom:auto;width:88vw;max-height:calc(84svh - 94px);overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;padding:0 3px 12px;font-size:clamp(12px,1.7vw,16px);line-height:1.4}
+  .branch-me .branch-photos{height:clamp(145px,32svh,330px);gap:6px}
+  .branch-director .branch-photos{height:auto;aspect-ratio:2.3;gap:6px}
+  .branch-director .branch-copy{width:100%}
+  .branch-director .branch-cta{position:static;margin:10px 0 0}
+  .branch-social .branch-photos{height:clamp(145px,32svh,330px);gap:8px}
+  .branch-social .branch-copy{text-align:left}
+  .branch-digital .branch-copy{font-size:inherit;min-height:0;margin-bottom:16px}
+  .branch-photography .curated-photographs{height:auto;aspect-ratio:2;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:6px}
+  .branch-copy p{line-height:1.4}
+  .branch-copy p+p{margin-top:12px}
+  .branch-photos :is(a,button)>span{font-size:clamp(10px,1.4vw,13px)}
+  .branch-cta{min-height:44px;display:flex;align-items:center}
+  .identity-home .signature-art{width:38px}
+}
+@media(max-width:480px){
+  .branch-digital{left:48%;max-width:46%}
+  .branch-digital .branch-trigger{max-width:44vw}
+  .branch-me .branch-photos{grid-template-columns:repeat(2,minmax(0,1fr));height:auto;grid-auto-rows:23svh}
+  .branch-me .branch-copy{margin-top:14px}
+  .branch-photography .curated-photographs{aspect-ratio:1.125;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr))}
+  .branch-social .social-projects{grid-template-columns:repeat(2,minmax(0,1fr));height:auto;grid-template-rows:auto}
+  .branch-social .social-projects>a{grid-column:1 / -1;aspect-ratio:2.1}
+  .branch-social .social-projects>button{aspect-ratio:.74}
+  .branch-digital .digital-projects{grid-template-columns:1fr;gap:12px}
+}
+@media(max-width:700px){
+  .about-background{filter:brightness(.78)}
+  .branch-trigger{text-shadow:0 1px 6px #000b;font-size:14px}
+}
