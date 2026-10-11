@@ -1,4 +1,4 @@
-import {visitorEndpoint} from './visitor-config.js?v=905f97e85689';
+import {visitorEndpoint} from './visitor-config.js?v=a3a5e319999a';
 const fallback={status:'not_connected',visits:null,regions:[]};
 let recording=Promise.resolve(),cached=null,cachedAt=0,pending=null;
 export function sessionFor(storage,now,uuid) {

@@ -1,6 +1,6 @@
-import {spreadPages,adjacentSpread} from './book-pagination.js?v=905f97e85689';
+import {spreadPages,adjacentSpread} from './book-pagination.js?v=a3a5e319999a';
 let library;
-const loadLibrary=()=>library??=import('./vendor/pdfjs/pdf.min.mjs?v=905f97e85689').then(pdfjs=>{
+const loadLibrary=()=>library??=import('./vendor/pdfjs/pdf.min.mjs?v=a3a5e319999a').then(pdfjs=>{
   pdfjs.GlobalWorkerOptions.workerSrc='/LiXiangXiang/vendor/pdfjs/pdf.worker.min.mjs';return pdfjs;
 });
 export function createDocumentReader(container){
