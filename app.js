@@ -1,10 +1,10 @@
-import { initHomeReload } from './home-navigation.js?v=a3a5e319999a';
-import { startVisitorSession, getVisitorStats } from './visitors.js?v=a3a5e319999a';
-import { openBooklet } from './intro-media.js?v=a3a5e319999a';
-import { contactScrollTop } from './contact.js?v=a3a5e319999a';
-import { renderWorkShowcase, renderWorkDetail, initWorkShowcase } from './work-showcase.js?v=a3a5e319999a';
-import { initHomeJourney } from './home-journey.js?v=a3a5e319999a';
-import { profile, cover, roles, projects, photography, reviews } from './content.js?v=a3a5e319999a';
+import { initHomeReload } from './home-navigation.js?v=d988f26c526f';
+import { startVisitorSession, getVisitorStats } from './visitors.js?v=d988f26c526f';
+import { openBooklet } from './intro-media.js?v=d988f26c526f';
+import { contactScrollTop } from './contact.js?v=d988f26c526f';
+import { renderWorkShowcase, renderWorkDetail, initWorkShowcase } from './work-showcase.js?v=d988f26c526f';
+import { initHomeJourney } from './home-journey.js?v=d988f26c526f';
+import { profile, cover, roles, projects, photography, reviews } from './content.js?v=d988f26c526f';
 
 const lang = 'en';
 let activeFilter = 'all';

@@ -1,4 +1,4 @@
-import {createDocumentReader} from './document-reader.js?v=a3a5e319999a';
+import {createDocumentReader} from './document-reader.js?v=d988f26c526f';
 export function openBooklet(number,trigger){
  const titles=['Watching while Eating','feel it'];
  if(!titles[number-1])return;

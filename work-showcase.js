@@ -1,8 +1,8 @@
-import { renderContact, initContact, contactScrollTop } from './contact.js?v=a3a5e319999a';
-import { initWorkArchive } from './work-archive.js?v=a3a5e319999a';
-import { projects, categories, cover } from './content.js?v=a3a5e319999a';
-import { createDocumentReader } from './document-reader.js?v=a3a5e319999a';
-import { createFoldWorkflow } from './fold-workflow.js?v=a3a5e319999a';
+import { renderContact, initContact, contactScrollTop } from './contact.js?v=d988f26c526f';
+import { initWorkArchive } from './work-archive.js?v=d988f26c526f';
+import { projects, categories, cover } from './content.js?v=d988f26c526f';
+import { createDocumentReader } from './document-reader.js?v=d988f26c526f';
+import { createFoldWorkflow } from './fold-workflow.js?v=d988f26c526f';
 
 const escape = (v='') => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const asset = value => /^(\/(?!\/)|https?:\/\/)/.test(value || '') ? escape(value) : '';
